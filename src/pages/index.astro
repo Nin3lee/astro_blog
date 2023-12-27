@@ -1,0 +1,409 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<!doctype html>
+<html lang="zh" class="text-xs lg:text-sm">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test</title>
+        <style lang="css">
+            [astro-icon] {
+                width: 30px;
+                height: 30px;
+            }
+            [astro-icon="nin3"] {
+                width: 57px;
+                height: 30px;
+            }
+            [astro-icon="hexo"] {
+                width: 14px;
+                height: 14px;
+            }
+            [astro-icon="astro"],
+            [astro-icon="figma"],
+            [astro-icon="vercel"],
+            [astro-icon="tailwind"] {
+                width: 16px;
+                height: 16px;
+            }
+            [astro-icon="click"] {
+                width: 25px;
+                height: 25px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header
+            class="sticky top-0 flex justify-between h-[48px] mx-6 md:w-[60rem] md:mx-auto backdrop-blur-sm bg-white/30 border-white"
+        >
+            <a href="/test/" class="flex self-center"><Icon name="nin3" /></a>
+            <nav class="flex self-center gap-4">
+                <div>
+                    <a
+                        href="/category/"
+                        class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
+                    >
+                        <Icon name="category" /><span
+                            class="hidden md:block text-lg font-semibold"
+                            >分类</span
+                        ></a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="/tags/"
+                        class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
+                        ><Icon name="tags" /><span
+                            class="hidden md:block text-lg font-semibold"
+                            >标签</span
+                        ></a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="/neighbor/"
+                        class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
+                        ><Icon name="neighbor" /><span
+                            class="hidden md:block text-lg font-semibold"
+                            >邻居</span
+                        ></a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="/about/"
+                        class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
+                        ><Icon name="about" /><span
+                            class="hidden md:block text-lg font-semibold"
+                            >关于</span
+                        ></a
+                    >
+                </div>
+            </nav>
+        </header>
+        <div class="bg-[#F9F9F9]">
+            <main class="px-4 w-screen md:w-[62.5rem] md:mx-auto">
+                <div class="grid grid-cols-2 gap-x-10 py-10">
+                    <div
+                        class="bg-blue-50 h-56 rounded-2xl hover:scale-[1.1] duration-300"
+                    >
+                        <div
+                            class="bg-white h-3/5 flex flex-row justify-center md:justify-evenly gap-4"
+                        >
+                            <div
+                                class="w-20 md:w-1/5 flex items-center justify-center"
+                            >
+                                <img
+                                    src="https://bu.dusays.com/2023/11/20/655ad33a8844a.png"
+                                    alt="nin3_avatar"
+                                    class="max-[375px]:w-16"
+                                />
+                            </div>
+                            <div
+                                class="flex flex-col w-2/5 items-center justify-center md:items-start"
+                            >
+                                <div
+                                    class="max-[375px]:text-xl text-2xl md:text-4xl"
+                                >
+                                    Nin3💯
+                                </div>
+                                <div class="hidden md:block md:text-4xl">
+                                    😴 🎮 🖥 🎨
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-gray-50 h-2/5 flex flex-row items-center justify-evenly"
+                        >
+                            <a href=""
+                                ><img
+                                    src="src/icons/switch.svg"
+                                    alt="switch"
+                                    class="max-[375px]:w-10 w-12 md:w-16"
+                                /></a
+                            >
+                            <a href=""
+                                ><img
+                                    src="src/icons/bilibili.svg"
+                                    alt="bilibili"
+                                    class="max-[375px]:w-10 w-12 md:w-16"
+                                /></a
+                            >
+                            <a href=""
+                                ><img
+                                    src="src/icons/steam.svg"
+                                    alt="steam"
+                                    class="max-[375px]:w-10 w-12 md:w-16"
+                                /></a
+                            >
+                            <a href=""
+                                ><img
+                                    src="src/icons/spotify.svg"
+                                    alt="spotify"
+                                    class="max-[375px]:w-10 w-12 md:w-16"
+                                /></a
+                            >
+                            <a href=""
+                                ><img
+                                    src="src/icons/github.svg"
+                                    alt="github"
+                                    class="hidden md:block"
+                                /></a
+                            >
+                        </div>
+                    </div>
+                    <div
+                        class="bg-blue-50 h-56 rounded-2xl hover:scale-[1.1] duration-300 flex justify-center items-center"
+                    >
+                        <div
+                            class="flex flex-col text-blue-500 text-xl md:text-3xl font-medium"
+                        >
+                            <span class="text-4xl">👋</span>
+                            <span>3 篇内容</span>
+                            <span>10 个话题</span>
+                            <span>2,023 次访问</span>
+                        </div>
+                        <div class="hidden md:block">img</div>
+                    </div>
+                </div>
+                <div class="py-10">
+                    <h1 class="text-xl mb-5 font-semibold text-[#333]">
+                        最近 🌟
+                    </h1>
+                    <div
+                        class="grid gap-10 grid-cols-2 grid-rows-3 md:grid-rows-2"
+                    >
+                        <a
+                            href=""
+                            class="col-span-2 bg-white md:h-80 rounded-2xl hover:scale-95 duration-300 overflow-hidden md:flex hover:shadow-lg hover:brightness-95"
+                        >
+                            <img
+                                src="https://bu.dusays.com/2023/12/26/658a83013227f.png"
+                                alt=""
+                            />
+                            <div
+                                class="flex flex-col p-4 md:p-12 h-[99px] md:h-[240px] lg:h-[280px] justify-between"
+                            >
+                                <div class="flex flex-col">
+                                    <span
+                                        class="text-blue-500 text-xl font-semibold md:text-2xl md:mb-2"
+                                        >视觉</span
+                                    >
+                                    <span
+                                        class="text-2xl font-semibold md:text-4xl text-[#333]"
+                                        >分享Figma社区上的宝藏设计师</span
+                                    >
+                                </div>
+                                <time class="text-base text-[#999]"
+                                    >2023 年 11 月 29 日</time
+                                >
+                            </div>
+                        </a>
+                        <a
+                            href=""
+                            class="col-span-2 md:col-span-1 bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95"
+                        >
+                            <img
+                                src="https://bu.dusays.com/2023/12/26/658a83012e97b.png"
+                                alt=""
+                            />
+                            <div
+                                class="flex flex-col p-4 h-[99px] md:h-[120px] justify-between"
+                            >
+                                <div class="flex flex-col">
+                                    <span
+                                        class="text-blue-500 text-xl font-semibold"
+                                        >视觉</span
+                                    >
+                                    <span
+                                        class="text-2xl font-semibold text-[#333]"
+                                        >新闻类APP设计系统分享</span
+                                    >
+                                </div>
+                                <time class="text-base text-[#999] md:text-sm"
+                                    >2023 年 10 月 18 日</time
+                                >
+                            </div></a
+                        >
+                        <a
+                            href=""
+                            class="col-span-2 md:col-span-1 bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95"
+                        >
+                            <img
+                                src="https://bu.dusays.com/2023/12/26/658a83012f3c4.png"
+                                alt=""
+                            />
+                            <div
+                                class="flex flex-col p-4 h-[99px] md:h-[120px] justify-between"
+                            >
+                                <div class="flex flex-col">
+                                    <span
+                                        class="text-emerald-500 text-xl font-semibold"
+                                        >经验</span
+                                    >
+                                    <span
+                                        class="text-2xl font-semibold text-[#333]"
+                                        >手把手教你如何用Figma画个自适应表格</span
+                                    >
+                                </div>
+                                <time class="text-base text-[#999] md:text-sm"
+                                    >2023 年 11 月 14 日</time
+                                >
+                            </div></a
+                        >
+                    </div>
+                </div>
+                <div class="py-10">
+                    <h1 class="text-xl mb-5 font-semibold text-[#333]">
+                        更多 🔭
+                    </h1>
+                    <div
+                        class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-10"
+                    >
+                        <a
+                            href=""
+                            class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95"
+                            ><img
+                                src="https://bu.dusays.com/2023/12/26/658a9399292f9.png"
+                                alt=""
+                            />
+                            <div class="flex flex-col p-4 justify-between">
+                                <div class="flex flex-col">
+                                    <span
+                                        class="text-indigo-500 font-semibold text-sm md:text-lg"
+                                        >更多</span
+                                    >
+                                    <span
+                                        class="text-lg md:text-xl font-semibold text-[#333]"
+                                        >这只是一个测试！</span
+                                    >
+                                </div>
+                                <time class="text-xs text-[#999] md:text-sm"
+                                    >2000 年 02 月 04 日</time
+                                >
+                            </div>
+                        </a>
+                        <a
+                            href=""
+                            class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95"
+                            ><img
+                                src="https://bu.dusays.com/2023/12/26/658a9399299da.png"
+                                alt=""
+                            />
+                            <div class="flex flex-col p-4 justify-between">
+                                <div class="flex flex-col">
+                                    <span
+                                        class="text-yellow-400 font-semibold text-sm md:text-lg"
+                                        >更多</span
+                                    >
+                                    <span
+                                        class="text-lg md:text-xl font-semibold text-[#333]"
+                                        >这只是一个测试！</span
+                                    >
+                                </div>
+                                <time class="text-xs text-[#999] md:text-sm"
+                                    >2000 年 02 月 04 日</time
+                                >
+                            </div></a
+                        >
+                    </div>
+                </div>
+                <div class="py-10 flex justify-end">
+                    <div
+                        class="text-[#333] hover:text-blue-500 hover:fill-blue-500 duration-300"
+                    >
+                        <a
+                            href="/archive/"
+                            class="flex items-center font-semibold"
+                        >
+                            <Icon name="click" />
+                             浏览归档</a
+                        >
+                    </div>
+                </div>
+            </main>
+        </div>
+        <hr />
+        <div class="bg-[#F3F3F3]">
+            <footer
+                class="h-[150px] md:w-[62.5rem] md:mx-auto mx-6 flex flex-col justify-evenly font-normal text-[12px]"
+            >
+                <div class="flex gap-2 mt-6 text-[#999] items-center">
+                    Powered by
+                    <div
+                        class="flex gap-[4px] bg-[#D9D9D9] px-[4px] h-[20px] rounded-full items-center"
+                    >
+                        <a href=""
+                            ><Icon
+                                name="astro"
+                                class="fill-white hover:fill-blue-500 duration-200"
+                            /></a
+                        >
+                        <a href=""
+                            ><Icon
+                                name="vercel"
+                                class="fill-white hover:fill-blue-500 duration-200"
+                            /></a
+                        >
+                        <a href=""
+                            ><Icon
+                                name="figma"
+                                class="fill-white hover:fill-blue-500 duration-200"
+                            /></a
+                        >
+                        <a href=""
+                            ><Icon
+                                name="tailwind"
+                                class="fill-white hover:fill-blue-500 duration-200"
+                            /></a
+                        >
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <span class="text-[#999]">Provide Preference by</span><a
+                        href=""
+                        class="hover:underline underline-offset-2 duration-200 hover:text-blue-500 text-[#666]"
+                        >异次元de机智君</a
+                    >
+                </div>
+                <div class="flex flex-row justify-between">
+                    <div class="flex gap-2">
+                        <span class="text-[#999]">
+                            Re-designed & Built with ❤ by</span
+                        ><a
+                            href=""
+                            class="hover:underline underline-offset-2 duration-200 hover:text-blue-500 text-[#666]"
+                            >Nin3lee</a
+                        >
+                    </div>
+                    <a
+                        href=""
+                        class="hover:underline underline-offset-2 duration-200 hover:text-blue-500 text-[#666] hover:fill-blue-500 fill-[#666] flex items-center gap-1"
+                    >
+                        <Icon name="hexo" class="" />
+                        <span class="">看看旧博客</span>
+                    </a>
+                </div>
+                <hr />
+                <div class="flex flex-row justify-between mb-6">
+                    <div>
+                        <span class="text-[#999]">Copyright © 2023-2024</span>
+                        <a
+                            href=""
+                            class="hover:underline underline-offset-2 duration-200 text-[#666] hover:text-blue-500"
+                            >Nin3</a
+                        >
+                    </div>
+                    <a
+                        href=""
+                        class="hover:underline underline-offset-2 duration-200 hover:text-blue-500 text-[#666]"
+                        >CC BY-NC-SA 4.0</a
+                    >
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

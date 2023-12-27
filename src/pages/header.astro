@@ -1,0 +1,74 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<!doctype html>
+<html lang="zh" class="text-xs lg:text-sm">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test</title>
+        <style lang="css">
+            [astro-icon] {
+                width: 30px;
+                height: 30px;
+            }
+            [astro-icon="nin3"] {
+                width: 57px;
+                height: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header
+            class="sticky flex justify-between h-[48px] mx-6 md:w-[60rem] md:mx-auto"
+        >
+            <a href="/test/" class="flex self-center"><Icon name="nin3" /></a>
+            <nav class="flex self-center gap-4">
+                <div>
+                    <a
+                        href="/category/"
+                        class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
+                    >
+                        <Icon name="category" /><span
+                            class="hidden md:block text-lg font-semibold"
+                            >分类</span
+                        ></a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="/tags/"
+                        class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
+                        ><Icon name="tags" /><span
+                            class="hidden md:block text-lg font-semibold"
+                            >标签</span
+                        ></a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="/neighbor/"
+                        class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
+                        ><Icon name="neighbor" /><span
+                            class="hidden md:block text-lg font-semibold"
+                            >邻居</span
+                        ></a
+                    >
+                </div>
+                <div>
+                    <a
+                        href="/about/"
+                        class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
+                        ><Icon name="about" /><span
+                            class="hidden md:block text-lg font-semibold"
+                            >关于</span
+                        ></a
+                    >
+                </div>
+            </nav>
+        </header>
+        <hr />
+    </body>
+</html>

@@ -1,5 +1,10 @@
 ---
 import { Icon } from "astro-icon";
+import switch_svg from "../icons/switch.svg";
+import bilibili_svg from "../icons/bilibili.svg";
+import steam_svg from "../icons/steam.svg";
+import spotify_svg from "../icons/spotify.svg";
+import github_svg from "../icons/github.svg";
 ---
 
 <!doctype html>
@@ -126,35 +131,35 @@ import { Icon } from "astro-icon";
                         >
                             <a href=""
                                 ><img
-                                    src="src/icons/switch.svg"
+                                    src={switch_svg.src}
                                     alt="switch"
                                     class="w-10 md:w-16 hover:scale-[1.1] duration-300"
                                 /></a
                             >
                             <a href=""
                                 ><img
-                                    src="src/icons/bilibili.svg"
+                                    src={bilibili_svg.src}
                                     alt="bilibili"
                                     class="w-10 md:w-16 hover:scale-[1.1] duration-300"
                                 /></a
                             >
                             <a href=""
                                 ><img
-                                    src="src/icons/steam.svg"
+                                    src={steam_svg.src}
                                     alt="steam"
                                     class="w-10 md:w-16 hover:scale-[1.1] duration-300"
                                 /></a
                             >
                             <a href=""
                                 ><img
-                                    src="src/icons/spotify.svg"
+                                    src={spotify_svg.src}
                                     alt="spotify"
                                     class="w-10 md:w-16 hover:scale-[1.1] duration-300"
                                 /></a
                             >
                             <a href=""
                                 ><img
-                                    src="src/icons/github.svg"
+                                    src={github_svg.src}
                                     alt="github"
                                     class="hidden md:block hover:scale-[1.1] duration-300"
                                 /></a

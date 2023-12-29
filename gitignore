@@ -1,0 +1,12 @@
+# Astro
+dist/
+.cache/
+node_modules/
+web_modules/
+.eslintcache
+.cache/
+.vercel/
+
+# Ignore lock files
+yarn.lock
+package-lock.json

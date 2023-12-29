@@ -8,5 +8,6 @@ export default defineConfig({
     // 示例：允许来自单个域名的远程图像优化。
     domains: ['https://7bu.top/user/images']
   },
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  favicon: 'favicon.ico'
 });

@@ -5,6 +5,8 @@ import bilibili_svg from "../icons/bilibili.svg";
 import steam_svg from "../icons/steam.svg";
 import spotify_svg from "../icons/spotify.svg";
 import github_svg from "../icons/github.svg";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <!doctype html>
@@ -15,25 +17,6 @@ import github_svg from "../icons/github.svg";
         <title>Nin3的个人主页</title>
         <link rel="icon" href="/favicon.ico" type="image/svg+xml/ico" />
         <style lang="css">
-            [astro-icon] {
-                width: 30px;
-                height: 30px;
-            }
-            [astro-icon="nin3"] {
-                width: 57px;
-                height: 30px;
-            }
-            [astro-icon="hexo"] {
-                width: 14px;
-                height: 14px;
-            }
-            [astro-icon="astro"],
-            [astro-icon="figma"],
-            [astro-icon="netlify"],
-            [astro-icon="tailwind"] {
-                width: 16px;
-                height: 16px;
-            }
             [astro-icon="click"] {
                 width: 25px;
                 height: 25px;
@@ -42,60 +25,7 @@ import github_svg from "../icons/github.svg";
     </head>
 
     <body>
-        <header
-            class="z-10 sticky top-0 px-6 backdrop-blur-lg bg-white/30 border-b border-gray-200"
-        >
-            <div class="flex justify-between h-[48px] md:w-[60rem] md:mx-auto">
-                <a
-                    href=""
-                    class="flex self-center hover:fill-blue-500 duration-300"
-                    ><Icon name="nin3" /></a
-                >
-                <nav class="flex self-center gap-4">
-                    <div>
-                        <a
-                            href="/category/"
-                            class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
-                        >
-                            <Icon name="category" /><span
-                                class="hidden md:block text-lg font-semibold"
-                                >分类</span
-                            ></a
-                        >
-                    </div>
-                    <div>
-                        <a
-                            href="/tags/"
-                            class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
-                            ><Icon name="tags" /><span
-                                class="hidden md:block text-lg font-semibold"
-                                >标签</span
-                            ></a
-                        >
-                    </div>
-                    <div>
-                        <a
-                            href="/neighbor/"
-                            class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
-                            ><Icon name="neighbor" /><span
-                                class="hidden md:block text-lg font-semibold"
-                                >邻居</span
-                            ></a
-                        >
-                    </div>
-                    <div>
-                        <a
-                            href="/about/"
-                            class="hover:fill-blue-500 hover:text-blue-500 flex items-center duration-300 gap-1"
-                            ><Icon name="about" /><span
-                                class="hidden md:block text-lg font-semibold"
-                                >关于</span
-                            ></a
-                        >
-                    </div>
-                </nav>
-            </div>
-        </header>
+        <Header />
         <div class="bg-[#F9F9F9]">
             <main class="px-8 w-[32rem] md:w-[62.5rem] mx-auto">
                 <div class="grid grid-cols-2 gap-x-6 py-10">
@@ -189,7 +119,7 @@ import github_svg from "../icons/github.svg";
                         class="grid gap-10 grid-cols-2 grid-rows-3 md:grid-rows-2"
                     >
                         <a
-                            href=""
+                            href="posts/figma-designers-sharing"
                             class="col-span-2 bg-white md:h-80 rounded-2xl hover:scale-95 duration-300 overflow-hidden md:flex hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
                         >
                             <img
@@ -215,7 +145,7 @@ import github_svg from "../icons/github.svg";
                             </div>
                         </a>
                         <a
-                            href=""
+                            href="posts/news-app-sharing"
                             class="col-span-2 md:col-span-1 bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
                         >
                             <img
@@ -241,7 +171,7 @@ import github_svg from "../icons/github.svg";
                             </div></a
                         >
                         <a
-                            href=""
+                            href="posts/figma-responsive-table"
                             class="col-span-2 md:col-span-1 bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
                         >
                             <img
@@ -276,7 +206,7 @@ import github_svg from "../icons/github.svg";
                         class="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-10"
                     >
                         <a
-                            href=""
+                            href="posts/this-is-a-test"
                             class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-md md:shadow-none"
                             ><img
                                 src="https://bu.dusays.com/2023/12/26/658a9399292f9.png"
@@ -299,7 +229,7 @@ import github_svg from "../icons/github.svg";
                             </div>
                         </a>
                         <a
-                            href=""
+                            href="posts/this-is-a-test"
                             class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-md md:shadow-none"
                             ><img
                                 src="https://bu.dusays.com/2023/12/26/658a9399299da.png"
@@ -338,87 +268,6 @@ import github_svg from "../icons/github.svg";
                 </div>
             </main>
         </div>
-        <hr />
-        <div class="bg-[#F3F3F3]">
-            <footer
-                class="h-[150px] md:w-[62.5rem] md:mx-auto mx-6 flex flex-col justify-evenly font-normal text-[12px]"
-            >
-                <div class="flex gap-2 mt-6 text-[#999] items-center">
-                    Powered by
-                    <div
-                        class="flex gap-[4px] bg-[#D9D9D9] px-[4px] h-[20px] rounded-full items-center"
-                    >
-                        <a href=""
-                            ><Icon
-                                name="astro"
-                                class="fill-white hover:fill-blue-500 duration-200"
-                            /></a
-                        >
-                        <a href=""
-                            ><Icon
-                                name="netlify"
-                                class="fill-white hover:fill-blue-500 duration-200"
-                            /></a
-                        >
-                        <a href=""
-                            ><Icon
-                                name="figma"
-                                class="fill-white hover:fill-blue-500 duration-200"
-                            /></a
-                        >
-                        <a href=""
-                            ><Icon
-                                name="tailwind"
-                                class="fill-white hover:fill-blue-500 duration-200"
-                            /></a
-                        >
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <span class="text-[#999]">Provide Preference by</span><a
-                        href=""
-                        class="hover:underline underline-offset-2 duration-200 hover:text-blue-500 text-[#666]"
-                        >异次元de机智君</a
-                    >
-                </div>
-                <div class="flex flex-row justify-between">
-                    <div class="flex gap-2 items-center group">
-                        <span class="text-[#999]">
-                            Re-designed & Built with <span
-                                class="font-mono text-xl group-hover:text-red-400 duration-300"
-                                >❤</span
-                            > by</span
-                        ><a
-                            href=""
-                            class="hover:underline underline-offset-2 duration-200 hover:text-blue-500 text-[#666]"
-                            >Nin3lee</a
-                        >
-                    </div>
-                    <a
-                        href=""
-                        class="hover:underline underline-offset-2 duration-200 hover:text-blue-500 text-[#666] hover:fill-blue-500 fill-[#666] flex items-center gap-1"
-                    >
-                        <Icon name="hexo" class="" />
-                        <span class="">看看旧博客</span>
-                    </a>
-                </div>
-                <hr />
-                <div class="flex flex-row justify-between mb-6">
-                    <div>
-                        <span class="text-[#999]">Copyright © 2023-2024</span>
-                        <a
-                            href=""
-                            class="hover:underline underline-offset-2 duration-200 text-[#666] hover:text-blue-500"
-                            >Nin3</a
-                        >
-                    </div>
-                    <a
-                        href=""
-                        class="hover:underline underline-offset-2 duration-200 hover:text-blue-500 text-[#666]"
-                        >CC BY-NC-SA 4.0</a
-                    >
-                </div>
-            </footer>
-        </div>
+        <Footer />
     </body>
 </html>

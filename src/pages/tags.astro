@@ -1,90 +1,127 @@
 ---
-import "../styles/tags.css";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tags' page</title>
-        <link rel="stylesheet" href="tags.css" />
+        <title>Nin3的个人主页</title>
     </head>
 
     <body>
-        <div class="flex-container">
-            <div class="container orange">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="orangenumber">1</p>
+        <div class="flex flex-col min-h-screen bg-[#F9F9F9]">
+            <Header />
+            <main class="mb-auto">
+                <div class="px-8 w-[32rem] md:w-[62.5rem] mx-auto">
+                    <div class="text-3xl font-semibold text-[#333] mt-6">
+                        标签 ✨
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 py-6"
+                        >
+                            <a href="">
+                                <div
+                                    class="rounded-full bg-gradient-to-r from-[#FF7410] to-[#FBA86C] duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                >
+                                    <div class="text-white text-xl">
+                                        # Figma
+                                    </div>
+                                    <div
+                                        class="rounded-full bg-white px-2 text-lg text-[#FF7410] font-semibold"
+                                    >
+                                        1
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div
+                                    class="rounded-full bg-gradient-to-r from-[#1070FF] to-[#66A2FB] duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                >
+                                    <div class="text-white text-xl">
+                                        # UI设计
+                                    </div>
+                                    <div
+                                        class="rounded-full bg-white px-2 text-lg text-[#66A2FB] font-semibold"
+                                    >
+                                        1
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div
+                                    class="rounded-full bg-gradient-to-r from-[#FFB800] to-[#FBD166] duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                >
+                                    <div class="text-white text-xl">
+                                        # 表格组件
+                                    </div>
+                                    <div
+                                        class="rounded-full bg-white px-2 text-lg text-[#FFB800] font-semibold"
+                                    >
+                                        1
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div
+                                    class="rounded-full bg-gradient-to-r from-[#039C00] to-[#5EBE5D] duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                >
+                                    <div class="text-white text-xl">
+                                        # 实用技巧
+                                    </div>
+                                    <div
+                                        class="rounded-full bg-white px-2 text-lg text-[#039C00] font-semibold"
+                                    >
+                                        1
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div
+                                    class="rounded-full bg-gradient-to-r from-[#8810FF] to-[#B56FFB] duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                >
+                                    <div class="text-white text-xl">
+                                        # 网站搭建
+                                    </div>
+                                    <div
+                                        class="rounded-full bg-white px-2 text-lg text-[#8810FF] font-semibold"
+                                    >
+                                        1
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div
+                                    class="rounded-full bg-gradient-to-r from-[#7F94FF] to-[#B0BCFB] duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                >
+                                    <div class="text-white text-xl"># 测试</div>
+                                    <div
+                                        class="rounded-full bg-white px-2 text-lg text-[#7F94FF] font-semibold"
+                                    >
+                                        1
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div
+                                    class="rounded-full bg-gradient-to-r from-[#FF1E10] to-[#FB6F66] duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                >
+                                    <div class="text-white text-xl">
+                                        # 视觉设计
+                                    </div>
+                                    <div
+                                        class="rounded-full bg-white px-2 text-lg text-[#FF1E10] font-semibold"
+                                    >
+                                        1
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="container red">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="rednumber">2</p>
-                </div>
-            </div>
-            <div class="container yellow">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="yellownumber">4</p>
-                </div>
-            </div>
-            <div class="container purple">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="purplenumber">12</p>
-                </div>
-            </div>
-            <div class="container green">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="greennumber">2</p>
-                </div>
-            </div>
-            <div class="container blue">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="bluenumber">6</p>
-                </div>
-            </div>
-            <div class="container green">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="greennumber">5</p>
-                </div>
-            </div>
-            <div class="container blue">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="bluenumber">7</p>
-                </div>
-            </div>
-            <div class="container purple">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="purplenumber">9</p>
-                </div>
-            </div>
-            <div class="container red">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="rednumber">123</p>
-                </div>
-            </div>
-            <div class="container yellow">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="yellownumber">1</p>
-                </div>
-            </div>
-            <div class="container cyan">
-                <p># 标签名称</p>
-                <div class="number">
-                    <p class="cyannumber">1</p>
-                </div>
-            </div>
+            </main>
+            <Footer />
         </div>
     </body>
 </html>

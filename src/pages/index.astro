@@ -33,10 +33,12 @@ import Footer from "../components/footer.astro";
     <body>
         <Header />
         <div class="bg-[#F9F9F9]">
-            <main class="px-8 w-[30rem] md:w-[62.5rem] mx-auto">
+            <main
+                class="px-8 w-[25rem] min-[360px]:w-[30rem] md:w-[62.5rem] mx-auto"
+            >
                 <div class="grid grid-cols-2 gap-x-6 py-10" data-aos="fade-up">
                     <div
-                        class="overflow-hidden bg-blue-50 h-56 rounded-2xl hover:scale-[1.05] duration-300 shadow-md md:shadow-none"
+                        class="overflow-hidden bg-blue-50 h-full md:h-56 w-full rounded-2xl hover:scale-[1.05] duration-300 shadow-md md:shadow-none aspect-square"
                     >
                         <div
                             class="bg-white h-2/3 md:h-3/5 flex flex-row justify-center md:justify-evenly gap-4"
@@ -69,7 +71,7 @@ import Footer from "../components/footer.astro";
                                 ><img
                                     src={switch_svg.src}
                                     alt="switch"
-                                    class="w-10 md:w-16 hover:scale-[1.1] duration-300"
+                                    class="w-8 min-[360px]:w-10 md:w-16 hover:scale-[1.1] duration-300"
                                 /></a
                             >
                             <a
@@ -79,7 +81,7 @@ import Footer from "../components/footer.astro";
                                 ><img
                                     src={bilibili_svg.src}
                                     alt="bilibili"
-                                    class="w-10 md:w-16 hover:scale-[1.1] duration-300"
+                                    class="w-8 min-[360px]:w-10 md:w-16 hover:scale-[1.1] duration-300"
                                 /></a
                             >
                             <a
@@ -89,7 +91,7 @@ import Footer from "../components/footer.astro";
                                 ><img
                                     src={steam_svg.src}
                                     alt="steam"
-                                    class="w-10 md:w-16 hover:scale-[1.1] duration-300"
+                                    class="w-8 min-[360px]:w-10 md:w-16 hover:scale-[1.1] duration-300"
                                 /></a
                             >
                             <a
@@ -99,7 +101,7 @@ import Footer from "../components/footer.astro";
                                 ><img
                                     src={spotify_svg.src}
                                     alt="spotify"
-                                    class="w-10 md:w-16 hover:scale-[1.1] duration-300"
+                                    class="w-8 min-[360px]:w-10 md:w-16 hover:scale-[1.1] duration-300"
                                 /></a
                             >
                             <a
@@ -115,7 +117,7 @@ import Footer from "../components/footer.astro";
                         </div>
                     </div>
                     <div
-                        class="bg-white h-56 rounded-2xl hover:scale-[1.05] duration-300 flex justify-center items-center shadow-md md:shadow-none group"
+                        class="bg-white h-full md:h-56 w-full rounded-2xl hover:scale-[1.05] duration-300 flex justify-center items-center shadow-md md:shadow-none group aspect-square"
                     >
                         <div
                             class="flex flex-col text-blue-500 text-xl md:text-3xl font-medium"
@@ -159,7 +161,7 @@ import Footer from "../components/footer.astro";
                                             >视觉</span
                                         >
                                         <span
-                                            class="text-2xl font-semibold md:text-4xl text-[#333]"
+                                            class="text-2xl font-semibold md:text-4xl text-[#333] truncate md:whitespace-normal"
                                             >分享Figma社区上的宝藏设计师</span
                                         >
                                     </div>
@@ -190,7 +192,7 @@ import Footer from "../components/footer.astro";
                                             >视觉</span
                                         >
                                         <span
-                                            class="text-2xl font-semibold text-[#333]"
+                                            class="text-2xl font-semibold text-[#333] truncate"
                                             >新闻类APP设计系统分享</span
                                         >
                                     </div>
@@ -252,6 +254,7 @@ import Footer from "../components/footer.astro";
                                 ><img
                                     src="https://bu.dusays.com/2023/12/26/658a9399292f9.png"
                                     alt=""
+                                    class="aspect-square object-cover min-[360px]:aspect-video"
                                 />
                                 <div class="flex flex-col p-4 justify-between">
                                     <div class="flex flex-col">
@@ -277,6 +280,7 @@ import Footer from "../components/footer.astro";
                                 ><img
                                     src="https://bu.dusays.com/2023/12/26/658a9399299da.png"
                                     alt=""
+                                    class="aspect-square object-cover min-[360px]:aspect-video"
                                 />
                                 <div class="flex flex-col p-4 justify-between">
                                     <div class="flex flex-col">
@@ -317,6 +321,8 @@ import Footer from "../components/footer.astro";
         <script is:inline>
             AOS.init({
                 once: true,
+                duration: 400,
+                easing: "ease-out-cubic",
             });
         </script>
     </body>

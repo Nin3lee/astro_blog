@@ -291,7 +291,9 @@ import Footer from "../components/footer.astro";
         <Footer />
         <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script is:inline>
-            AOS.init();
+            AOS.init({
+                once: true,
+            });
         </script>
     </body>
 </html>

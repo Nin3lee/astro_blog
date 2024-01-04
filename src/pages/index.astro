@@ -16,6 +16,7 @@ import Footer from "../components/footer.astro";
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nin3的个人主页</title>
         <link rel="icon" href="/favicon.ico" type="image/svg+xml/ico" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <style lang="css">
             [astro-icon="click"] {
                 width: 25px;
@@ -28,7 +29,7 @@ import Footer from "../components/footer.astro";
         <Header />
         <div class="bg-[#F9F9F9]">
             <main class="px-8 w-[30rem] md:w-[62.5rem] mx-auto">
-                <div class="grid grid-cols-2 gap-x-6 py-10">
+                <div class="grid grid-cols-2 gap-x-6 py-10" data-aos="fade-up">
                     <div
                         class="overflow-hidden bg-blue-50 h-56 rounded-2xl hover:scale-[1.05] duration-300 shadow-md md:shadow-none"
                     >
@@ -112,7 +113,10 @@ import Footer from "../components/footer.astro";
                     </div>
                 </div>
                 <div class="py-10">
-                    <h1 class="text-3xl mb-5 font-semibold text-[#333]">
+                    <h1
+                        class="text-3xl mb-5 font-semibold text-[#333]"
+                        data-aos="fade-up"
+                    >
                         最近 🌟
                     </h1>
                     <div
@@ -121,6 +125,7 @@ import Footer from "../components/footer.astro";
                         <a
                             href="posts/figma-designers-sharing"
                             class="col-span-2 bg-white md:h-80 rounded-2xl hover:scale-95 duration-300 overflow-hidden md:flex hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
+                            data-aos="fade-up"
                         >
                             <img
                                 src="https://bu.dusays.com/2023/12/26/658a83013227f.png"
@@ -147,6 +152,7 @@ import Footer from "../components/footer.astro";
                         <a
                             href="posts/news-app-sharing"
                             class="col-span-2 md:col-span-1 bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
+                            data-aos="fade-up"
                         >
                             <img
                                 src="https://bu.dusays.com/2023/12/26/658a83012e97b.png"
@@ -173,6 +179,7 @@ import Footer from "../components/footer.astro";
                         <a
                             href="posts/figma-responsive-table"
                             class="col-span-2 md:col-span-1 bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
+                            data-aos="fade-up"
                         >
                             <img
                                 src="https://bu.dusays.com/2023/12/26/658a83012f3c4.png"
@@ -199,7 +206,10 @@ import Footer from "../components/footer.astro";
                     </div>
                 </div>
                 <div class="py-10">
-                    <h1 class="text-3xl mb-5 font-semibold text-[#333]">
+                    <h1
+                        class="text-3xl mb-5 font-semibold text-[#333]"
+                        data-aos="fade-up"
+                    >
                         更多 🔭
                     </h1>
                     <div
@@ -208,6 +218,7 @@ import Footer from "../components/footer.astro";
                         <a
                             href="posts/this-is-a-test"
                             class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-md md:shadow-none"
+                            data-aos="fade-up"
                             ><img
                                 src="https://bu.dusays.com/2023/12/26/658a9399292f9.png"
                                 alt=""
@@ -231,6 +242,7 @@ import Footer from "../components/footer.astro";
                         <a
                             href="posts/this-is-a-test"
                             class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-md md:shadow-none"
+                            data-aos="fade-up"
                             ><img
                                 src="https://bu.dusays.com/2023/12/26/658a9399299da.png"
                                 alt=""
@@ -269,5 +281,9 @@ import Footer from "../components/footer.astro";
             </main>
         </div>
         <Footer />
+        <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script is:inline>
+            AOS.init();
+        </script>
     </body>
 </html>

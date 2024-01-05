@@ -1,0 +1,102 @@
+---
+import switch_svg from "../icons/switch.svg";
+import bilibili_svg from "../icons/bilibili.svg";
+import steam_svg from "../icons/steam.svg";
+import spotify_svg from "../icons/spotify.svg";
+import github_svg from "../icons/github.svg";
+---
+
+<div class="grid grid-cols-2 gap-x-6 py-10" data-aos="fade-up">
+    <div
+        class="overflow-hidden bg-blue-50 h-full md:h-56 w-full rounded-2xl hover:scale-[1.05] duration-300 shadow-md md:shadow-none aspect-square"
+    >
+        <div
+            class="bg-white h-2/3 md:h-3/5 flex flex-row justify-center md:justify-evenly gap-4"
+        >
+            <div class="w-20 md:w-1/5 flex items-center justify-center">
+                <img
+                    src="https://bu.dusays.com/2023/11/20/655ad33a8844a.png"
+                    alt="nin3_avatar"
+                    class="w-16"
+                />
+            </div>
+            <div
+                class="flex flex-col w-2/5 items-center justify-center md:items-start"
+            >
+                <div class="text-xl md:text-4xl">Nin3💯</div>
+                <div class="hidden md:block md:text-4xl">😴 🎮 🖥 🎨</div>
+            </div>
+        </div>
+        <div
+            class="bg-gray-50 h-1/3 md:h-2/5 flex flex-row items-center justify-evenly"
+        >
+            <a
+                href="https://lounge.nintendo.com/friendcode/5569-6604-3399/CrFNRTGFy6"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                    src={switch_svg.src}
+                    alt="switch"
+                    class="w-8 min-[360px]:w-10 md:w-16 hover:scale-[1.1] duration-300"
+                /></a
+            >
+            <a
+                href="https://b23.tv/BouPrKE"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                    src={bilibili_svg.src}
+                    alt="bilibili"
+                    class="w-8 min-[360px]:w-10 md:w-16 hover:scale-[1.1] duration-300"
+                /></a
+            >
+            <a
+                href="https://steamcommunity.com/id/9Monster/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                    src={steam_svg.src}
+                    alt="steam"
+                    class="w-8 min-[360px]:w-10 md:w-16 hover:scale-[1.1] duration-300"
+                /></a
+            >
+            <a
+                href="https://open.spotify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                    src={spotify_svg.src}
+                    alt="spotify"
+                    class="w-8 min-[360px]:w-10 md:w-16 hover:scale-[1.1] duration-300"
+                /></a
+            >
+            <a
+                href="https://github.com/Nin3lee"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hidden md:block"
+                ><img
+                    src={github_svg.src}
+                    alt="github"
+                    class="hover:scale-[1.1] duration-300"
+                /></a
+            >
+        </div>
+    </div>
+    <div
+        class="bg-white h-full md:h-56 w-full rounded-2xl hover:scale-[1.05] duration-300 flex justify-center items-center shadow-md md:shadow-none group aspect-square"
+    >
+        <div
+            class="flex flex-col text-blue-500 text-xl md:text-3xl font-medium"
+        >
+            <span
+                class="text-4xl group-hover:animate-[wiggle_1s_ease-in-out_infinite]"
+                >👋</span
+            >
+            <span>3 篇内容</span>
+            <span>10 个话题</span>
+            <span>2,023 次访问</span>
+        </div>
+        <div class="hidden md:block">img</div>
+    </div>
+</div>

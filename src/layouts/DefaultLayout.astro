@@ -1,0 +1,32 @@
+---
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+---
+
+<!doctype html>
+<html lang="zh" class="text-xs lg:text-sm scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nin3的个人主页</title>
+        <link rel="icon" href="/favicon.ico" type="image/svg+xml/ico" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script
+            async
+            src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
+    </head>
+    <body>
+        <Header />
+        <slot />
+        <Footer />
+        <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script is:inline>
+            AOS.init({
+                once: true,
+                duration: 400,
+                easing: "ease-out-cubic",
+            });
+        </script>
+    </body>
+</html>

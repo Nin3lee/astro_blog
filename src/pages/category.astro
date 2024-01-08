@@ -1,157 +1,145 @@
 ---
-import Header from "../components/header.astro";
-import Footer from "../components/footer.astro";
+import DefaultLayout from "../layouts/DefaultLayout.astro";
 ---
 
-<!doctype html>
-<html lang="zh" class="text-xs lg:text-sm">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nin3的个人主页</title>
-    </head>
-
-    <body>
-        <div class="flex flex-col min-h-screen bg-[#F9F9F9]">
-            <Header />
-            <main class="bg-[#F9F9F9] mb-auto">
-                <div class="px-8 w-[32rem] md:w-[62.5rem] mx-auto">
-                    <div class="text-3xl font-semibold text-[#333] mt-6">
-                        分类 📖
-                    </div>
-                    <div
-                        class="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-6 py-6"
-                    >
-                        <a href="">
-                            <div
-                                class="rounded-2xl bg-gradient-to-r from-[#FF7410] to-[#FBA86C] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
-                            >
-                                <div class="flex justify-between items-center">
-                                    <div class="text-xl text-white font-normal">
-                                        + 代码钻研
-                                    </div>
-                                    <div
-                                        class="rounded-full bg-white px-2 text-lg text-[#FF7410] font-semibold"
-                                    >
-                                        1
-                                    </div>
-                                </div>
-                                <div
-                                    class="text-6xl text-white opacity-25 font-bold"
-                                >
-                                    &lt; / &gt;
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div
-                                class="rounded-2xl bg-gradient-to-r from-[#1070FF] to-[#66A2FB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
-                            >
-                                <div class="flex justify-between items-center">
-                                    <div class="text-xl text-white font-normal">
-                                        + 视觉设计
-                                    </div>
-                                    <div
-                                        class="rounded-full bg-white px-2 text-lg text-[#1070FF] font-semibold"
-                                    >
-                                        2
-                                    </div>
-                                </div>
-                                <div
-                                    class="text-6xl text-white opacity-20 font-bold"
-                                >
-                                    视觉
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div
-                                class="rounded-2xl bg-gradient-to-r from-[#FFB800] to-[#FBD166] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
-                            >
-                                <div class="flex justify-between items-center">
-                                    <div class="text-xl text-white font-normal">
-                                        + 更多内容
-                                    </div>
-                                    <div
-                                        class="rounded-full bg-white px-2 text-lg text-[#FFB800] font-semibold"
-                                    >
-                                        2
-                                    </div>
-                                </div>
-                                <div
-                                    class="text-6xl text-white opacity-20 font-bold"
-                                >
-                                    更多+
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div
-                                class="rounded-2xl bg-gradient-to-r from-[#039C00] to-[#5EBE5D] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
-                            >
-                                <div class="flex justify-between items-center">
-                                    <div class="text-xl text-white font-normal">
-                                        + 经验分享
-                                    </div>
-                                    <div
-                                        class="rounded-full bg-white px-2 text-lg text-[#039C00] font-semibold"
-                                    >
-                                        2
-                                    </div>
-                                </div>
-                                <div
-                                    class="text-6xl text-white opacity-20 font-bold"
-                                >
-                                    EXP+
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div
-                                class="rounded-2xl bg-gradient-to-r from-[#8810FF] to-[#B56FFB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
-                            >
-                                <div class="flex justify-between items-center">
-                                    <div class="text-xl text-white font-normal">
-                                        + 音乐推荐
-                                    </div>
-                                    <div
-                                        class="rounded-full bg-white px-2 text-lg text-[#8810FF] font-semibold"
-                                    >
-                                        2
-                                    </div>
-                                </div>
-                                <div
-                                    class="text-6xl text-white opacity-20 font-bold"
-                                >
-                                    音乐♪
-                                </div>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div
-                                class="rounded-2xl bg-gradient-to-r from-[#7F94FF] to-[#B0BCFB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
-                            >
-                                <div class="flex justify-between items-center">
-                                    <div class="text-xl text-white font-normal">
-                                        + 更多内容
-                                    </div>
-                                    <div
-                                        class="rounded-full bg-white px-2 text-lg text-[#7F94FF] font-semibold"
-                                    >
-                                        2
-                                    </div>
-                                </div>
-                                <div
-                                    class="text-6xl text-white opacity-20 font-bold"
-                                >
-                                    更多+
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+<DefaultLayout>
+    <div class="flex flex-col min-h-screen bg-[#F9F9F9]">
+        <main class="bg-[#F9F9F9] mb-auto">
+            <div class="px-8 w-[32rem] md:w-[62.5rem] mx-auto">
+                <div class="text-3xl font-semibold text-[#333] mt-6">
+                    分类 📖
                 </div>
-            </main>
-            <Footer />
-        </div>
-    </body>
-</html>
+                <div
+                    class="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-6 py-6"
+                >
+                    <a href="">
+                        <div
+                            class="rounded-2xl bg-gradient-to-r from-[#FF7410] to-[#FBA86C] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="text-xl text-white font-normal">
+                                    + 代码钻研
+                                </div>
+                                <div
+                                    class="rounded-full bg-white px-2 text-lg text-[#FF7410] font-semibold"
+                                >
+                                    1
+                                </div>
+                            </div>
+                            <div
+                                class="text-6xl text-white opacity-25 font-bold"
+                            >
+                                &lt; / &gt;
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div
+                            class="rounded-2xl bg-gradient-to-r from-[#1070FF] to-[#66A2FB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="text-xl text-white font-normal">
+                                    + 视觉设计
+                                </div>
+                                <div
+                                    class="rounded-full bg-white px-2 text-lg text-[#1070FF] font-semibold"
+                                >
+                                    2
+                                </div>
+                            </div>
+                            <div
+                                class="text-6xl text-white opacity-20 font-bold"
+                            >
+                                视觉
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div
+                            class="rounded-2xl bg-gradient-to-r from-[#FFB800] to-[#FBD166] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="text-xl text-white font-normal">
+                                    + 更多内容
+                                </div>
+                                <div
+                                    class="rounded-full bg-white px-2 text-lg text-[#FFB800] font-semibold"
+                                >
+                                    2
+                                </div>
+                            </div>
+                            <div
+                                class="text-6xl text-white opacity-20 font-bold"
+                            >
+                                更多+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div
+                            class="rounded-2xl bg-gradient-to-r from-[#039C00] to-[#5EBE5D] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="text-xl text-white font-normal">
+                                    + 经验分享
+                                </div>
+                                <div
+                                    class="rounded-full bg-white px-2 text-lg text-[#039C00] font-semibold"
+                                >
+                                    2
+                                </div>
+                            </div>
+                            <div
+                                class="text-6xl text-white opacity-20 font-bold"
+                            >
+                                EXP+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div
+                            class="rounded-2xl bg-gradient-to-r from-[#8810FF] to-[#B56FFB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="text-xl text-white font-normal">
+                                    + 音乐推荐
+                                </div>
+                                <div
+                                    class="rounded-full bg-white px-2 text-lg text-[#8810FF] font-semibold"
+                                >
+                                    2
+                                </div>
+                            </div>
+                            <div
+                                class="text-6xl text-white opacity-20 font-bold"
+                            >
+                                音乐♪
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div
+                            class="rounded-2xl bg-gradient-to-r from-[#7F94FF] to-[#B0BCFB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                        >
+                            <div class="flex justify-between items-center">
+                                <div class="text-xl text-white font-normal">
+                                    + 更多内容
+                                </div>
+                                <div
+                                    class="rounded-full bg-white px-2 text-lg text-[#7F94FF] font-semibold"
+                                >
+                                    2
+                                </div>
+                            </div>
+                            <div
+                                class="text-6xl text-white opacity-20 font-bold"
+                            >
+                                更多+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</DefaultLayout>

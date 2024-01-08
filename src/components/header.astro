@@ -2,6 +2,12 @@
 import { Icon } from "astro-icon";
 ---
 
+<head
+    ><link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@next/dist/aos.css"
+    /></head
+>
 <style lang="css">
     [astro-icon] {
         width: 30px;
@@ -62,3 +68,11 @@ import { Icon } from "astro-icon";
         </nav>
     </div>
 </header>
+<script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script is:inline>
+    AOS.init({
+        once: true,
+        duration: 400,
+        easing: "ease-out-cubic",
+    });
+</script>

@@ -11,8 +11,24 @@ export default {
 			},
 			animation: {
 				wiggle: 'wiggle 1s ease-in-out infinite'
+			},
+			typography: {
+				DEFAULT: {
+					css: [
+						{
+							maxWidth: '62.5rem',
+						},
+						{
+							h1: {
+								fontWeight: '800'
+							},
+						}
+					]
+				}
 			}
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 }

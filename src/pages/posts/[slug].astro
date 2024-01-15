@@ -15,5 +15,32 @@ const { Content } = await entry.render();
 ---
 
 <MarkdownPostLayout frontmatter={entry.data}>
+    <div class="mb-4">
+        <div class="text-[#7F94FF] text-base font-semibold">
+            {entry.data.categories}
+        </div>
+        <div class="flex font-semibold text-base">
+            <div>
+                {entry.data.pubDate}
+            </div>
+            <p class="m-0 ml-3">·</p>
+            <div class="ml-3">{entry.data.readingtime} min read</div>
+            <p class="m-0 ml-3">·</p>
+            <div class="ml-3">{entry.data.views} Views</div>
+        </div>
+        <p
+            class="text-5xl my-4 bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-blue-500 font-extrabold"
+        >
+            {entry.data.title}
+        </p>
+        <p class="text-2xl m-0 mb-4 font-medium">
+            {entry.data.description}
+        </p>
+        <img
+            src={entry.data.cover}
+            alt="cover"
+            class="rounded-3xl w-full m-0"
+        />
+    </div>
     <Content />
 </MarkdownPostLayout>

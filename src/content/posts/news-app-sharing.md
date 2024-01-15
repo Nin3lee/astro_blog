@@ -1,15 +1,15 @@
 ---
 title: 新闻类APP设计系统分享
-pubDate: 2023-10-08 16:34:51
+pubDate: '2023 年 10 月 8 日'
 author: nin3
-description: news-app-sharing
-aside: false
+description: 本文是作者于2021年大学在校时期，基于当时的设计思路完成的新闻类APP设计系统虚题。
+readingtime: 10
 tags: 
   - UI设计
   - 视觉设计
 cover: https://bu.dusays.com/2023/11/20/655ad25cc79b1.png
-ai: 本文是作者于2021年大学在校时期，基于当时的设计思路完成的新闻类APP设计系统虚题。
-categories: 视觉设计
+categories: 设计
+views: 2024
 ---
 ### 搭载Iframe的实时预览
 Figma提供的Iframe嵌入代码允许我们实时的浏览该项目，支持便捷的缩放和全屏展示。

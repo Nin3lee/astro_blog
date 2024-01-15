@@ -1,12 +1,15 @@
 ---
 title: 这只是一个测试！
-pubDate: 2023-09-12 18:00:25
-description: this-is-a-test
+pubDate: '2023 年 9 月 12 日'
+description: 在这个测试页面你可以看到近乎所有的组件样式!
 author: nin3
+readingtime: 10
 tags: 
   - 测试
 top_img: '#FF6161'
 cover: https://bu.dusays.com/2023/11/21/655c64bdb8321.png
+categories: 设计
+views: 2024
 ---
 这是一个用来浏览和测试页面，<br>
 所有markdown文件在这里会被 typography 插件渲染成自定义的样式。（我是p标签）
@@ -81,6 +84,16 @@ contents ...
 <div class="flex items-center my-8 gap-4 bg-[#FFE7E5] rounded-2xl">
     <div class="pl-6">⛔</div>
     <p class="text-[#FF1E10]">一个警告消息</p>
+</div>
+
+<div class="flex items-center my-8 gap-4 bg-[#F6ECD0] rounded-2xl">
+    <div class="pl-6">🔔</div>
+    <p class="text-[#FFB800]">一个提示消息</p>
+</div>
+
+<div class="flex items-center my-8 gap-4 bg-[#D0E7D0] rounded-2xl">
+    <div class="pl-6">✅</div>
+    <p class="text-[#039C00]">一个通过消息</p>
 </div>
 
 可能会面临的大段文字。

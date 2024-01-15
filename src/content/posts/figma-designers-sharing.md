@@ -1,13 +1,16 @@
 ---
 title: '分享Figma社区上的宝藏设计师'
-pubDate: 2023-11-29 15:35:13
-description: figma-designers-sharing
+pubDate: '2023 年 11 月 29 日'
+description: Figma社区是个非常具有魅力的地方，善用它，你也能成为非常优秀的设计师。
+readingtime: 10
 author: nin3
 tags:
   - UI设计
   - Figma
   - 设计分享
-categories: 视觉设计
+categories: 设计
+cover: https://bu.dusays.com/2023/12/26/658a83013227f.png
+views: 2024
 ---
 ## \#1 我最喜欢的超棒教学 Lichin 👇🏻
 https://www.figma.com/@lichin
@@ -20,7 +23,7 @@ https://www.figma.com/@lichin
 
 >「Designtips.today」系列中的自动布局篇伴随着Figma的更新已经过时，请参阅「设计系统实作小学堂」中的自动布局部分来学习和实用哦！
 
-{% image https://bu.dusays.com/2023/11/29/656722f0eead1.png, width=1000px %}
+![这是一个图片](https://bu.dusays.com/2023/11/29/656722f0eead1.png "Lichin")
 
 ## \#2 小老虎 Mr.Biscuit 🐯
 https://www.figma.com/@mrbiscuit
@@ -32,7 +35,7 @@ https://www.figma.com/@mrbiscuit
 - 各种各样优化Figma用户体验的奇妙插件，例如[多样式字体的整体选中](https://www.figma.com/community/plugin/1039804395780906653/unmix-fonts)，矢量编辑下的[一键闭合线段](https://www.figma.com/community/plugin/1000208017155888036/close-path)，[填充图形一键转换为矢量线条](https://www.figma.com/community/plugin/1027037684003682350/outline-to-single-stroke)，更强大的[布局面板](https://www.figma.com/community/file/1089790476460041983/pro-layout-panel-playground)和[Section功能](https://www.figma.com/community/plugin/1105082111167032053/figma-section)
 - 当然也有一些趣味的小组件例如[iOS的灵动岛动画](https://www.figma.com/community/file/1149615167228120293/iphone-14-pro-dynamic-island-animations)，[能够自动隐藏占位符的输入框](https://www.figma.com/community/file/1112228346239383282/smart-input)等等。
 
-{% image https://bu.dusays.com/2023/11/29/656722f1c4f15.png, width=1000px %}
+![这是一个图片](https://bu.dusays.com/2023/11/29/656722f1c4f15.png "Mr.Biscuit")
 
 ## \#3 更懂设计师的 Hubo 👇🏻
 https://www.figma.com/@achg
@@ -43,7 +46,7 @@ https://www.figma.com/@achg
 ### ✨ 亮点
 - 开箱即用的模板和指南，更懂设计师想要什么的设计师。
 
-{% image https://bu.dusays.com/2023/11/29/656722f1a370d.png, width=1000px %}
+![这是一个图片](https://bu.dusays.com/2023/11/29/656722f1a370d.png "Hubo")
 
 ## 🪐 后日谈
 Figma社区是个非常具有魅力的地方，这里聚集了非常多的设计项目分享和插件等等，完全由设计师们躬身缔造的设计资源，除了作者在这里提到的设计师，其实还有更多超棒的插件亟待发现。善用它，你也能成为非常优秀的设计师。

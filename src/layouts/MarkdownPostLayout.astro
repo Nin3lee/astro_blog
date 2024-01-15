@@ -16,39 +16,8 @@ import Prose from "../components/prose.astro";
     <body>
         <Header />
         <Prose>
-            <div class="mb-4">
-                <div class="text-[#7F94FF] text-base font-semibold">测试</div>
-                <div class="flex font-semibold text-base">
-                    <div class="">2000 年 2 月 4 日</div>
-                    <p class="m-0 ml-3">·</p>
-                    <div class="ml-3">10 min read</div>
-                    <p class="m-0 ml-3">·</p>
-                    <div class="ml-3">2024 Views</div>
-                </div>
-                <p
-                    class="text-5xl my-4 bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-blue-500 font-extrabold"
-                >
-                    这只是个测试！
-                </p>
-                <p class="text-2xl m-0 mb-4 font-medium">
-                    在这个测试页面你可以看到近乎所有的组件样式!
-                </p>
-                <img
-                    src="https://bu.dusays.com/2023/12/26/658a9399299da.png"
-                    alt="cover"
-                    class="rounded-3xl w-full m-0"
-                />
-            </div>
             <slot />
         </Prose>
         <Footer />
-        <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script is:inline>
-            AOS.init({
-                once: true,
-                duration: 400,
-                easing: "ease-out-cubic",
-            });
-        </script>
     </body>
 </html>

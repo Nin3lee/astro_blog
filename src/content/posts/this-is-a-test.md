@@ -78,22 +78,22 @@ contents ...
 五颜六色👇
 <div class="flex items-center my-8 gap-4 bg-[#EEEEEE] rounded-2xl">
     <div class="pl-6">💁‍♀️</div>
-    <p>一个呼出消息</p>
+    <p class="pr-6">一个呼出消息</p>
 </div>
 
 <div class="flex items-center my-8 gap-4 bg-[#FFE7E5] rounded-2xl">
     <div class="pl-6">⛔</div>
-    <p class="text-[#FF1E10]">一个警告消息</p>
+    <p class="text-[#FF1E10] pr-6">一个警告消息</p>
 </div>
 
 <div class="flex items-center my-8 gap-4 bg-[#F6ECD0] rounded-2xl">
     <div class="pl-6">🔔</div>
-    <p class="text-[#FFB800]">一个提示消息</p>
+    <p class="text-[#FFB800] pr-6">一个提示消息</p>
 </div>
 
 <div class="flex items-center my-8 gap-4 bg-[#D0E7D0] rounded-2xl">
     <div class="pl-6">✅</div>
-    <p class="text-[#039C00]">一个通过消息</p>
+    <p class="text-[#039C00] pr-6">一个通过消息</p>
 </div>
 
 可能会面临的大段文字。

@@ -13,7 +13,7 @@ views: 2024
 ---
 ### 搭载Iframe的实时预览
 Figma提供的Iframe嵌入代码允许我们实时的浏览该项目，支持便捷的缩放和全屏展示。
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1270" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDEh0ys71li4JXyOTBV2DKt%2F%25E9%25A1%25B6%25E5%25B3%25B0%25E6%2596%25B0%25E9%2597%25BBApp%3Ftype%3Ddesign%26node-id%3D189%253A403%26mode%3Ddesign%26t%3DVGfSyTsNCNOncIgw-1" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="w-full aspect-video rounded-2xl" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDEh0ys71li4JXyOTBV2DKt%2F%25E9%25A1%25B6%25E5%25B3%25B0%25E6%2596%25B0%25E9%2597%25BBApp%3Ftype%3Ddesign%26node-id%3D189%253A403%26mode%3Ddesign%26t%3DVGfSyTsNCNOncIgw-1" allowfullscreen></iframe>
 
 ### 页面展示
 ![顶峰新闻-1](https://bu.dusays.com/2023/11/20/655ad2d1cda88.png "顶峰新闻-1")

@@ -10,7 +10,7 @@ tags:
   - Figma
   - 实用技巧
 categories: 设计
-cover: https://bu.dusays.com/2023/11/20/655ad354bb7f8.png 
+cover: https://bu.dusays.com/2023/12/26/658a83012f3c4.png 
 views: 2024
 ---
 ### 搭建前的知识了解

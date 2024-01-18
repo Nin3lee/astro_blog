@@ -1,0 +1,25 @@
+---
+import { getCollection } from "astro:content";
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import BlogPost from "../components/BlogPosts.astro";
+
+const allPosts = await getCollection("posts");
+---
+
+<DefaultLayout>
+    <div class="bg-[#F9F9F9]">
+        <main class="mx-6 md:mx-auto md:w-[62.5rem]">
+            <div class="text-3xl font-semibold text-[#333] py-6">归档 📚</div>
+            {
+                allPosts.map((post) => (
+                    <BlogPost
+                        url={`/posts/${post.slug}/`}
+                        title={post.data.title}
+                        cover={post.data.cover}
+                        pubDate={post.data.pubDate}
+                    />
+                ))
+            }
+        </main>
+    </div>
+</DefaultLayout>

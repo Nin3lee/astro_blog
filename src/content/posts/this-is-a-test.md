@@ -7,7 +7,7 @@ readingtime: 10
 tags: 
   - 测试
 top_img: '#FF6161'
-cover: https://bu.dusays.com/2023/11/21/655c64bdb8321.png
+cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
 categories: 设计
 views: 2024
 ---
@@ -89,10 +89,10 @@ views: 2024
 ![这是一个图片](https://bu.dusays.com/2023/11/21/655c64bdb8321.png "新鲜出炉的封面")
 
 再嵌入一段视频👇
-<video src="https://cdn.dribbble.com/users/485324/screenshots/14983659/media/f3578a43968fc8eb6aef6f492a1e1244.mp4#t=0.01" controls></video>
+<video src="https://cdn.dribbble.com/users/485324/screenshots/14983659/media/f3578a43968fc8eb6aef6f492a1e1244.mp4#t=0.01" controls data-aos="fade-up"></video>
 
 别忘了iframe👇
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="w-full aspect-video rounded-2xl" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDEh0ys71li4JXyOTBV2DKt%2F%25E9%25A1%25B6%25E5%25B3%25B0%25E6%2596%25B0%25E9%2597%25BBApp%3Ftype%3Ddesign%26node-id%3D189%253A403%26mode%3Ddesign%26t%3DVGfSyTsNCNOncIgw-1" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="w-full aspect-video rounded-2xl" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDEh0ys71li4JXyOTBV2DKt%2F%25E9%25A1%25B6%25E5%25B3%25B0%25E6%2596%25B0%25E9%2597%25BBApp%3Ftype%3Ddesign%26node-id%3D189%253A403%26mode%3Ddesign%26t%3DVGfSyTsNCNOncIgw-1" allowfullscreen data-aos="fade-up"></iframe>
 
 五颜六色👇
 <div class="flex items-center my-8 gap-4 bg-[#EEEEEE] rounded-2xl">

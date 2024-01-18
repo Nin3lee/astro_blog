@@ -7,7 +7,7 @@ readingtime: 10
 tags: 
   - UI设计
   - 视觉设计
-cover: https://bu.dusays.com/2023/11/20/655ad25cc79b1.png
+cover: https://bu.dusays.com/2023/12/26/658a83012e97b.png
 categories: 设计
 views: 2024
 ---

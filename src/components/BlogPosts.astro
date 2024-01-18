@@ -1,0 +1,27 @@
+---
+const { title, url, cover, pubDate } = Astro.props;
+---
+
+<div class="flex col-span-2 md:h-80 mb-6" data-aos="fade-up">
+    <a
+        href={url}
+        class="bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden md:flex hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
+    >
+        <img src={cover} alt="cover" />
+        <div
+            class="flex flex-col p-4 md:p-12 h-[99px] md:h-[240px] lg:h-[280px] justify-between"
+        >
+            <div class="flex flex-col">
+                <span
+                    class="text-blue-500 text-xl font-semibold md:text-2xl md:mb-2"
+                    >视觉</span
+                >
+                <span
+                    class="text-2xl font-semibold md:text-4xl text-[#333] truncate md:whitespace-normal"
+                    >{title}</span
+                >
+            </div>
+            <time class="text-base text-[#999]">{pubDate}</time>
+        </div>
+    </a>
+</div>

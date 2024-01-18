@@ -12,6 +12,13 @@ export default {
 			animation: {
 				wiggle: 'wiggle 1s ease-in-out infinite'
 			},
+			backgroundSize: {
+				'no-underline-size': '0 1px, auto',
+				'underline-size': '100% 1px, auto',
+			},
+			backgroundImage: {
+				'underline': 'linear-gradient(CurrentColor, CurrentColor), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))'
+			},
 			typography: {
 				DEFAULT: {
 					css: [

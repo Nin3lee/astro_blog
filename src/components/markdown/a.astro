@@ -1,0 +1,10 @@
+---
+const props = Astro.props;
+---
+
+<a
+    {...props}
+    class="after:content-['↗'] not-italic text-blue-500 hover:underline font-bold"
+>
+    <slot />
+</a>

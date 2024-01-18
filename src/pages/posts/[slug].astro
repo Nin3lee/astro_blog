@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon";
 import { getCollection } from "astro:content";
 import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
 
@@ -15,11 +16,11 @@ const { Content } = await entry.render();
 ---
 
 <MarkdownPostLayout frontmatter={entry.data}>
-    <div class="mb-4">
-        <div class="text-[#7F94FF] text-base font-semibold">
+    <header class="mb-4">
+        <div class="text-[#7F94FF] text-lg font-semibold">
             {entry.data.categories}
         </div>
-        <div class="flex font-semibold text-base">
+        <div class="flex font-semibold text-lg">
             <div>
                 {entry.data.pubDate}
             </div>
@@ -41,6 +42,84 @@ const { Content } = await entry.render();
             alt="cover"
             class="rounded-3xl w-full m-0"
         />
-    </div>
+    </header>
     <Content />
+    <footer>
+        <div class="md:flex md:justify-between">
+            <div class="flex my-2 gap-2">
+                <Icon name="tags" class="w-[30px]" />
+                <div
+                    class="px-4 py-1 rounded-full bg-gradient-to-r from-[#7F94FF] to-[#B0BCFB] text-[#fff] text-[14px] leading-9"
+                >
+                    测试
+                </div>
+            </div>
+            <div class="inline-block bg-gray-200 px-3 py-1 rounded-full my-2">
+                <Icon name="image" class="w-[20px] mr-1 inline" />
+                <p class="my-0 text-black inline text-[14px] leading-8">
+                    原创封面图，请勿盗用
+                </p>
+            </div>
+        </div>
+        <div
+            class="w-full bg-[#EEE] p-4 my-4 rounded-3xl overflow-hidden relative group"
+        >
+            <Icon
+                name="cc"
+                class="overflow-hidden h-[180px] absolute -right-16 -top-8 lg:h-[200px] fill-gray-300 group-hover:fill-indigo-300 duration-500 ease-in-out"
+            />
+            <header class="mb-4 relative z-10">
+                <div class="font-bold text-black">{entry.data.title}</div>
+                <div class="text-gray-400 line-clamp-1">
+                    https://nin3-lee.netlify.app/posts/{entry.slug}
+                </div>
+            </header>
+            <footer class="flex flex-row">
+                <div class="mr-4 z-10">
+                    <div class="text-base text-[#666]">作者</div>
+                    <div class="text-base text-black line-clamp-1">
+                        {entry.data.author}
+                    </div>
+                </div>
+                <div class="mr-4 z-10">
+                    <div class="text-base text-[#666]">发布于</div>
+                    <div class="text-base text-black line-clamp-1">
+                        {entry.data.pubDate}
+                    </div>
+                </div>
+                <div class="mr-4 z-10">
+                    <div class="text-base text-[#666]">更新于</div>
+                    <div class="text-base text-black line-clamp-1">
+                        {entry.data.pubDate}
+                    </div>
+                </div>
+                <div class="mr-4 z-10">
+                    <div class="text-base text-[#666]">许可协议</div>
+                    <div class="text-base text-black flex gap-2 line-clamp-1">
+                        <a
+                            href="https://creativecommons.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="not-prose hover:fill-blue-500 duration-300"
+                            ><Icon name="cc" class="w-[16px]" /></a
+                        >
+                        <a
+                            href="https://creativecommons.org/licenses/by/4.0/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="not-prose hover:fill-blue-500 duration-300"
+                            ><Icon name="attribution" class="w-[16px]" /></a
+                        >
+                        <a
+                            href="https://creativecommons.org/licenses/by-nc/4.0/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="not-prose hover:fill-blue-500 duration-300"
+                            ><Icon name="noncommercial" class="w-[16px]" /></a
+                        >
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </footer>
 </MarkdownPostLayout>

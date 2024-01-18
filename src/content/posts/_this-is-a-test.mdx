@@ -1,6 +1,6 @@
 ---
 title: 这只是一个测试！
-pubDate: '2000 年 2 月 4 日'
+pubDate: '2023 年 9 月 12 日'
 description: 在这个测试页面你可以看到近乎所有的组件样式!
 author: nin3
 readingtime: 10
@@ -11,12 +11,31 @@ cover: https://bu.dusays.com/2023/11/21/655c64bdb8321.png
 categories: 设计
 views: 2024
 ---
-这是一个用来浏览和测试页面，<br>
+import blockquote from '../../components/markdown/blockquote.astro';
+import a from '../../components/markdown/a.astro';
+import em from '../../components/markdown/em.astro';
+import h1 from '../../components/markdown/h1.astro';
+import h2 from '../../components/markdown/h2.astro';
+import h3 from '../../components/markdown/h3.astro';
+import ul from '../../components/markdown/ul.astro';
+import ol from '../../components/markdown/ol.astro';
+import p from '../../components/markdown/p.astro';
+import strong from '../../components/markdown/strong.astro';
+import img from '../../components/markdown/img.astro';
+import video from '../../components/markdown/video.astro';
+// import kbd from '../../components/markdown/kbd.astro';
+// import pre from '../../components/markdown/pre.astro';
+// import details from '../../components/markdown/details.astro';
+// import code from '../../components/markdown/code.astro';
+export const components = {blockquote,a,em,h1,h2,h3,ul,ol,p,strong,img,video}
+
+
+这是一个用来浏览和测试页面，
 所有markdown文件在这里会被 typography 插件渲染成自定义的样式。（我是p标签）
 # 这是 H1 大标题
-可能用在标题，向下嵌套其他 <副标题>。
+可能用在标题，向下嵌套其他 \<副标题\>。
 ## 二级标题
-很明显，它是用于被嵌套的那个。<br>
+很明显，它是用于被嵌套的那个。<br></br>
 这里很适合插入一个无序列表 👇
 - 吃饭
 - 睡觉
@@ -26,56 +45,36 @@ views: 2024
 1. 抽烟
 2. 喝酒
 3. 烫头
-#### 四级标题 ~~小小的也很可爱~~
+
 这是一个任务列表👇
 - [x] 打开冰箱
 - [ ] 把大象塞进冰箱里
 - [ ] 关上冰箱
 
-<blockquote class="not-prose before:content-['❝'] before:text-gray-500 before:text-4xl after:content-['❞'] after:text-gray-500 text-[#333] justify-center font-bold flex gap-1 mb-6">
-    <p class="mt-6 text-2xl">
-        这是一个自定义的引用样式
-    </p>
-</blockquote>
+> 很明显它是个引用
 
-> 很明显它是个引用,但是prose样式的伪元素居然不能自定义？！
+有时候一句话里也需要插入一些 *强调的句子*
 
-表现不好的引用，会被淘汰🙅
-
-<div class="flex flex-col mb-6">
-    <blockquote class="not-prose before:content-['❝'] before:text-gray-500 before:text-4xl after:content-['❞'] after:text-gray-500 text-[#333] justify-center font-bold flex gap-1">
-        <p class="mt-6 text-2xl">
-            优化一下署名的引用
-        </p>
-    </blockquote>
-    <div class="flex flex-row-reverse text-[#333] font-light">
-        @这是署名的部分
-    </div>
-</div>
-
-有时候一句话里也需要插入一些**强调的句子**
-
-很蹊跷，这玩意的code并没有渲染...
-```
+<prose>
+<code class="">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nin3的个人主页</title>
         <link rel="icon" href="/favicon.ico" type="image/svg+xml/ico" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-        </script>
+        <script
+            async
+            src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
     </head>
-```
+</code>
+</prose>
 
-<div class="bg-gray-200 mx-auto p-6 rounded-2xl">
-    <details class=""> 
-        <summary>
-            点击展开
-        </summary>
-            展开内容
-    </details>
-</div>
+<details> 
+<summary>Title</summary>
+contents ...
+</details>
 
 分割线👇
 
@@ -83,13 +82,14 @@ views: 2024
 
 分割线👆︎
 
-这里有一个可爱的 *[Markdown 使用手册](https://www.markdownguide.org)* 无人问津。
+这里有一个可爱的 [Markdown 使用手册](https://www.markdownguide.org) 无人问津。
 
 嵌入一张封面👇
+
 ![这是一个图片](https://bu.dusays.com/2023/11/21/655c64bdb8321.png "新鲜出炉的封面")
 
 再嵌入一段视频👇
-<video src="https://cdn.dribbble.com/users/485324/screenshots/14983659/media/f3578a43968fc8eb6aef6f492a1e1244.mp4#t=0.01" controls></video>
+<video class="rounded-2xl" src="https://cdn.dribbble.com/users/485324/screenshots/14983659/media/f3578a43968fc8eb6aef6f492a1e1244.mp4#t=0.01" controls></video>
 
 别忘了iframe👇
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" class="w-full aspect-video rounded-2xl" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDEh0ys71li4JXyOTBV2DKt%2F%25E9%25A1%25B6%25E5%25B3%25B0%25E6%2596%25B0%25E9%2597%25BBApp%3Ftype%3Ddesign%26node-id%3D189%253A403%26mode%3Ddesign%26t%3DVGfSyTsNCNOncIgw-1" allowfullscreen></iframe>
@@ -97,7 +97,7 @@ views: 2024
 五颜六色👇
 <div class="flex items-center my-8 gap-4 bg-[#EEEEEE] rounded-2xl">
     <div class="pl-6">💁‍♀️</div>
-    <p class="text-[#333] pr-6">一个呼出消息</p>
+    <p class="pr-6">一个呼出消息</p>
 </div>
 
 <div class="flex items-center my-8 gap-4 bg-[#FFE7E5] rounded-2xl">

@@ -8,7 +8,9 @@ const allPosts = await getCollection("posts");
 
 <DefaultLayout>
     <div class="bg-[#F9F9F9]">
-        <main class="mx-6 md:mx-auto md:w-[62.5rem]">
+        <main
+            class="px-8 w-[25rem] min-[360px]:w-[30rem] md:w-[62.5rem] mx-auto"
+        >
             <div class="text-3xl font-semibold text-[#333] py-6">归档 📚</div>
             {
                 allPosts.map((post) => (

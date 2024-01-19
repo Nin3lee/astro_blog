@@ -17,10 +17,10 @@ const { Content } = await entry.render();
 
 <MarkdownPostLayout frontmatter={entry.data}>
     <header class="mb-4">
-        <div class="text-[#7F94FF] text-lg font-semibold">
+        <div class="text-[#7F94FF] text-lg font-semibold" data-aos="fade-down">
             {entry.data.categories}
         </div>
-        <div class="flex font-semibold text-lg">
+        <div class="flex font-semibold text-lg" data-aos="fade-down">
             <div>
                 {entry.data.pubDate}
             </div>
@@ -31,10 +31,11 @@ const { Content } = await entry.render();
         </div>
         <p
             class="text-5xl my-4 bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-blue-500 font-extrabold"
+            data-aos="fade-down"
         >
             {entry.data.title}
         </p>
-        <p class="text-2xl m-0 mb-4 font-medium">
+        <p class="text-2xl m-0 mb-4 font-medium" data-aos="fade-down">
             {entry.data.description}
         </p>
         <img

@@ -6,7 +6,6 @@ author: nin3
 readingtime: 10
 tags: 
   - 测试
-top_img: '#FF6161'
 cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
 categories: 设计
 views: 2024
@@ -32,18 +31,10 @@ views: 2024
 - [ ] 把大象塞进冰箱里
 - [ ] 关上冰箱
 
-<blockquote class="not-prose before:content-['❝'] before:text-gray-500 before:text-4xl after:content-['❞'] after:text-gray-500 text-[#333] justify-center font-bold flex gap-1 mb-6">
-    <p class="mt-6 text-2xl">
-        这是一个自定义的引用样式
-    </p>
-</blockquote>
-
-> 很明显它是个引用,但是prose样式的伪元素居然不能自定义？！
-
-表现不好的引用，会被淘汰🙅
+> 这是一个自定义的引用样式
 
 <div class="flex flex-col mb-6">
-    <blockquote class="not-prose before:content-['❝'] before:text-gray-500 before:text-4xl after:content-['❞'] after:text-gray-500 text-[#333] justify-center font-bold flex gap-1">
+    <blockquote class="not-prose before:content-['❝'] before:text-4xl after:content-['❞'] text-[#333] justify-center font-bold flex gap-1">
         <p class="mt-6 text-2xl">
             优化一下署名的引用
         </p>
@@ -55,17 +46,20 @@ views: 2024
 
 有时候一句话里也需要插入一些**强调的句子**
 
-很蹊跷，这玩意的code并没有渲染...
-```
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nin3的个人主页</title>
-        <link rel="icon" href="/favicon.ico" type="image/svg+xml/ico" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-        </script>
-    </head>
+```yaml
+---
+title: 这只是一个测试！
+pubDate: '2000 年 2 月 4 日'
+description: 在这个测试页面你可以看到近乎所有的组件样式!
+author: nin3
+readingtime: 10
+tags: 
+  - 测试
+top_img: '#FF6161'
+cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
+categories: 设计
+views: 2024
+---
 ```
 
 <div class="bg-gray-200 mx-auto p-6 rounded-2xl">

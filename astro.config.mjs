@@ -18,8 +18,8 @@ export default defineConfig({
       // 另外，也提供了多种主题
       // https://shikiji.netlify.app/guide/dual-themes#light-dark-dual-themes
       experimentalThemes: {
-        light: 'github-light',
-        dark: 'github-dark',
+        light: 'dark-plus',
+        dark: 'dark-plus',
       },
       // 添加自定义语言
       // 注意：Shiki 内置了无数语言，包括 .astro！

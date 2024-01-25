@@ -29,6 +29,16 @@ export default {
 							h1: {
 								fontWeight: '800'
 							},
+						},
+						{
+							'blockquote p:first-of-type::before': {
+								content: null,
+							},
+						},
+						{
+							'blockquote p:last-of-type::after': {
+								content: null,
+							},
 						}
 					]
 				}

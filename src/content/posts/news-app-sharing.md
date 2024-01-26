@@ -8,7 +8,8 @@ tags:
   - UI设计
   - 视觉设计
 cover: https://bu.dusays.com/2023/12/26/658a83012e97b.png
-categories: 设计
+categories: 视觉
+themecolor: text-blue-500
 views: 2024
 ---
 ### 搭载Iframe的实时预览

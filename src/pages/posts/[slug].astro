@@ -17,8 +17,10 @@ const { Content } = await entry.render();
 
 <MarkdownPostLayout frontmatter={entry.data}>
     <header class="mb-4">
-        <div class="text-[#7F94FF] text-lg font-semibold" data-aos="fade-down">
-            {entry.data.categories}
+        <div class={entry.data.themecolor}>
+            <div class="text-lg font-semibold" data-aos="fade-down">
+                {entry.data.categories}
+            </div>
         </div>
         <div class="flex font-semibold text-lg" data-aos="fade-down">
             <div>
@@ -51,7 +53,7 @@ const { Content } = await entry.render();
             <div class="flex my-2 gap-2">
                 <Icon name="tags" class="w-[30px]" />
                 <div
-                    class="px-4 py-1 rounded-full bg-gradient-to-r from-[#7F94FF] to-[#B0BCFB] text-[#fff] text-[14px] leading-9"
+                    class="px-4 py-1 rounded-full bg-gradient-to-r from-[#7F94FF] to-[#B0BCFB] text-[#fff] text-[14px] leading-9 duration-300 hover:scale-90 cursor-pointer"
                 >
                     测试
                 </div>

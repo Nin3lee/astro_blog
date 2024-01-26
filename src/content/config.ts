@@ -12,7 +12,8 @@ const postsCollection = defineCollection({
         tags: z.array(z.string()),
         cover: z.string(),
         views: z.number(),
-        categories: z.string()
+        categories: z.string(),
+        themecolor: z.string()
     })
 });
 // 导出一个单独的 `collections` 对象来注册你的集合

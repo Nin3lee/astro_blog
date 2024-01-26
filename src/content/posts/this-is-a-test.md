@@ -7,7 +7,8 @@ readingtime: 10
 tags: 
   - 测试
 cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
-categories: 设计
+categories: 测试
+themecolor: text-indigo-500
 views: 2024
 ---
 这是一个用来浏览和测试页面，<br>
@@ -46,6 +47,7 @@ views: 2024
 
 有时候一句话里也需要插入一些**强调的句子**
 
+代码预览👇
 ```yaml
 ---
 title: 这只是一个测试！
@@ -62,6 +64,15 @@ views: 2024
 ---
 ```
 
+较少用到的表格👇
+| 表头   |  描述  |
+| :----- | :----: |
+| 表身#1 | 描述#1 |
+| 表身#2 | 描述#2 |
+| 表身#3 | 描述#3 |
+| 表身#4 | 描述#4 |
+
+折叠格式👇
 <div class="bg-gray-200 mx-auto p-6 rounded-2xl">
     <details class=""> 
         <summary>

@@ -3,6 +3,43 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			colors: {
+				red: {
+					start: '#FF1E10',
+					end: '#FB6F66',
+					DEFAULT: '#FF1E10',
+				},
+				orange: {
+					start: '#FF7410',
+					end: '#FBA86C',
+					DEFAULT: '#FF7410',
+				},
+				yellow: {
+					start: '#FFB800',
+					end: '#FBD166',
+					DEFAULT: '#FFB800',
+				},
+				green: {
+					start: '#039C00',
+					end: '#5EBE5D',
+					DEFAULT: '#039C00',
+				},
+				cyan: {
+					start: '#7F94FF',
+					end: '#B0BCFB',
+					DEFAULT: '#7F94FF',
+				},
+				blue: {
+					start: '#1070FF',
+					end: '#66A2FB',
+					DEFAULT: '#1070FF',
+				},
+				purple: {
+					start: '#8810FF',
+					end: '#B56FFB',
+					DEFAULT: '#8810FF',
+				},
+			},
 			keyframes: {
 				wiggle: {
 					'0%, 100%': { transform: 'rotate(-5deg)' },
@@ -32,12 +69,22 @@ export default {
 						},
 						{
 							'blockquote p:first-of-type::before': {
-								content: null,
+								content: 'none'
 							},
 						},
 						{
 							'blockquote p:last-of-type::after': {
-								content: null,
+								content: 'none'
+							},
+						},
+						{
+							'code::before': {
+								content: 'none'
+							},
+						},
+						{
+							'code::after': {
+								content: 'none'
 							},
 						}
 					]

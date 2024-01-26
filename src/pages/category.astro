@@ -1,5 +1,43 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+const categories = [
+    {
+        title: "+ 代码钻研",
+        number: "0",
+        subtitle: "< / >",
+        color: "from-orange-start to-orange-end",
+    },
+    {
+        title: "+ 视觉设计",
+        number: "2",
+        subtitle: "视觉",
+        color: "from-blue-start to-blue-end",
+    },
+    {
+        title: "+ 更多内容",
+        number: "0",
+        subtitle: "更多+",
+        color: "from-yellow-start to-yellow-end",
+    },
+    {
+        title: "+ 经验分享",
+        number: "2",
+        subtitle: "EXP+",
+        color: "from-green-start to-green-end",
+    },
+    {
+        title: "+ 音乐推荐",
+        number: "0",
+        subtitle: "音乐♪",
+        color: "from-purple-start to-purple-end",
+    },
+    {
+        title: "+ 更多内容",
+        number: "2",
+        subtitle: "更多+",
+        color: "from-cyan-start to-cyan-end",
+    },
+];
 ---
 
 <DefaultLayout>
@@ -14,127 +52,127 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
                 >
                     <a href="">
                         <div
-                            class="rounded-2xl bg-gradient-to-r from-[#FF7410] to-[#FBA86C] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                            class="rounded-2xl bg-gradient-to-r from-orange-start to-orange-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
                             <div class="flex justify-between items-center">
                                 <div class="text-xl text-white font-normal">
-                                    + 代码钻研
+                                    {categories[0].title}
                                 </div>
                                 <div
-                                    class="rounded-full bg-white px-2 text-lg text-[#FF7410] font-semibold"
+                                    class="rounded-full bg-white px-2 text-lg text-orange font-semibold"
                                 >
-                                    1
+                                    {categories[0].number}
                                 </div>
                             </div>
                             <div
                                 class="text-6xl text-white opacity-25 font-bold"
                             >
-                                &lt; / &gt;
+                                {categories[0].subtitle}
                             </div>
                         </div>
                     </a>
                     <a href="">
                         <div
-                            class="rounded-2xl bg-gradient-to-r from-[#1070FF] to-[#66A2FB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                            class="rounded-2xl bg-gradient-to-r from-blue-start to-blue-start duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
                             <div class="flex justify-between items-center">
                                 <div class="text-xl text-white font-normal">
-                                    + 视觉设计
+                                    {categories[1].title}
                                 </div>
                                 <div
-                                    class="rounded-full bg-white px-2 text-lg text-[#1070FF] font-semibold"
+                                    class="rounded-full bg-white px-2 text-lg text-blue font-semibold"
                                 >
-                                    2
+                                    {categories[1].number}
                                 </div>
                             </div>
                             <div
                                 class="text-6xl text-white opacity-20 font-bold"
                             >
-                                视觉
+                                {categories[1].subtitle}
                             </div>
                         </div>
                     </a>
                     <a href="">
                         <div
-                            class="rounded-2xl bg-gradient-to-r from-[#FFB800] to-[#FBD166] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                            class="rounded-2xl bg-gradient-to-r from-yellow-start to-yellow-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
                             <div class="flex justify-between items-center">
                                 <div class="text-xl text-white font-normal">
-                                    + 更多内容
+                                    {categories[2].title}
                                 </div>
                                 <div
-                                    class="rounded-full bg-white px-2 text-lg text-[#FFB800] font-semibold"
+                                    class="rounded-full bg-white px-2 text-lg text-yellow font-semibold"
                                 >
-                                    2
+                                    {categories[2].number}
                                 </div>
                             </div>
                             <div
                                 class="text-6xl text-white opacity-20 font-bold"
                             >
-                                更多+
+                                {categories[2].subtitle}
                             </div>
                         </div>
                     </a>
                     <a href="">
                         <div
-                            class="rounded-2xl bg-gradient-to-r from-[#039C00] to-[#5EBE5D] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                            class="rounded-2xl bg-gradient-to-r from-green-start to-green-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
                             <div class="flex justify-between items-center">
                                 <div class="text-xl text-white font-normal">
-                                    + 经验分享
+                                    {categories[3].title}
                                 </div>
                                 <div
-                                    class="rounded-full bg-white px-2 text-lg text-[#039C00] font-semibold"
+                                    class="rounded-full bg-white px-2 text-lg text-green font-semibold"
                                 >
-                                    2
+                                    {categories[3].number}
                                 </div>
                             </div>
                             <div
                                 class="text-6xl text-white opacity-20 font-bold"
                             >
-                                EXP+
+                                {categories[3].subtitle}
                             </div>
                         </div>
                     </a>
                     <a href="">
                         <div
-                            class="rounded-2xl bg-gradient-to-r from-[#8810FF] to-[#B56FFB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                            class="rounded-2xl bg-gradient-to-r from-purple-start to-purple-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
                             <div class="flex justify-between items-center">
                                 <div class="text-xl text-white font-normal">
-                                    + 音乐推荐
+                                    {categories[4].title}
                                 </div>
                                 <div
-                                    class="rounded-full bg-white px-2 text-lg text-[#8810FF] font-semibold"
+                                    class="rounded-full bg-white px-2 text-lg text-purple font-semibold"
                                 >
-                                    2
+                                    {categories[4].number}
                                 </div>
                             </div>
                             <div
                                 class="text-6xl text-white opacity-20 font-bold"
                             >
-                                音乐♪
+                                {categories[4].subtitle}
                             </div>
                         </div>
                     </a>
                     <a href="">
                         <div
-                            class="rounded-2xl bg-gradient-to-r from-[#7F94FF] to-[#B0BCFB] duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
+                            class="rounded-2xl bg-gradient-to-r from-cyan-start to-cyan-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
                             <div class="flex justify-between items-center">
                                 <div class="text-xl text-white font-normal">
-                                    + 更多内容
+                                    {categories[5].title}
                                 </div>
                                 <div
-                                    class="rounded-full bg-white px-2 text-lg text-[#7F94FF] font-semibold"
+                                    class="rounded-full bg-white px-2 text-lg text-cyan font-semibold"
                                 >
-                                    2
+                                    {categories[5].number}
                                 </div>
                             </div>
                             <div
                                 class="text-6xl text-white opacity-20 font-bold"
                             >
-                                更多+
+                                {categories[5].subtitle}
                             </div>
                         </div>
                     </a>

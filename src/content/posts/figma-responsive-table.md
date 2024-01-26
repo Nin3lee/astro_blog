@@ -9,7 +9,8 @@ tags:
   - 表格组件
   - Figma
   - 实用技巧
-categories: 设计
+categories: 经验
+themecolor: text-emerald-500
 cover: https://bu.dusays.com/2023/12/26/658a83012f3c4.png 
 views: 2024
 ---

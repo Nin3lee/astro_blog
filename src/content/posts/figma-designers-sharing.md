@@ -9,7 +9,7 @@ tags:
   - Figma
   - 设计分享
 categories: 经验
-themecolor: text-emerald-500
+themecolor: "text-emerald-500"
 cover: https://bu.dusays.com/2023/12/26/658a83013227f.png
 views: 2024
 ---

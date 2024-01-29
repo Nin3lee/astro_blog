@@ -39,6 +39,9 @@ export default {
 					end: '#B56FFB',
 					DEFAULT: '#8810FF',
 				},
+				gray: {
+					DEFAULT: '#333333'
+				},
 			},
 			keyframes: {
 				wiggle: {

@@ -8,7 +8,7 @@ tags:
   - 测试
 cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
 categories: 测试
-themecolor: text-indigo-500
+themecolor: "text-indigo-500"
 views: 2024
 ---
 这是一个用来浏览和测试页面，<br>

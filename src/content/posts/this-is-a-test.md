@@ -1,6 +1,7 @@
 ---
 title: 这只是一个测试！
 pubDate: '2000 年 2 月 4 日'
+date: 2000-02-04
 description: 在这个测试页面你可以看到近乎所有的组件样式!
 author: nin3
 readingtime: 10

@@ -1,5 +1,5 @@
 ---
-import DefaultLayout from "../layouts/DefaultLayout.astro";
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
 const categories = [
     {
         title: "+ 代码钻研",
@@ -9,7 +9,7 @@ const categories = [
     },
     {
         title: "+ 视觉设计",
-        number: "2",
+        number: "1",
         subtitle: "视觉",
         color: "from-blue-start to-blue-end",
     },
@@ -32,9 +32,9 @@ const categories = [
         color: "from-purple-start to-purple-end",
     },
     {
-        title: "+ 更多内容",
-        number: "2",
-        subtitle: "更多+",
+        title: "+ 测试模板",
+        number: "1",
+        subtitle: "Test+",
         color: "from-cyan-start to-cyan-end",
     },
 ];
@@ -50,7 +50,7 @@ const categories = [
                 <div
                     class="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-6 py-6"
                 >
-                    <a href="">
+                    <a href="/category/代码/">
                         <div
                             class="rounded-2xl bg-gradient-to-r from-orange-start to-orange-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
@@ -71,7 +71,7 @@ const categories = [
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/category/视觉/">
                         <div
                             class="rounded-2xl bg-gradient-to-r from-blue-start to-blue-start duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
@@ -92,7 +92,7 @@ const categories = [
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/category/更多/">
                         <div
                             class="rounded-2xl bg-gradient-to-r from-yellow-start to-yellow-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
@@ -113,7 +113,7 @@ const categories = [
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/category/经验/">
                         <div
                             class="rounded-2xl bg-gradient-to-r from-green-start to-green-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
@@ -134,7 +134,7 @@ const categories = [
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/category/音乐/">
                         <div
                             class="rounded-2xl bg-gradient-to-r from-purple-start to-purple-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >
@@ -155,7 +155,7 @@ const categories = [
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="/category/测试/">
                         <div
                             class="rounded-2xl bg-gradient-to-r from-cyan-start to-cyan-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6"
                         >

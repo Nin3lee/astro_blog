@@ -1,6 +1,7 @@
 ---
 title: '分享Figma社区上的宝藏设计师'
 pubDate: '2023 年 11 月 29 日'
+date: 2023-11-29
 description: Figma社区是个非常具有魅力的地方，善用它，你也能成为非常优秀的设计师。
 readingtime: 10
 author: nin3

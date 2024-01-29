@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import BlogPost from "../../components/BlogPosts.astro";
+
+export async function getStaticPaths() {
+    const allPosts = await getCollection("posts");
+    const uniqueCategories = [
+        ...new Set(allPosts.map((post) => post.data.categories).flat()),
+    ];
+
+    return uniqueCategories.map((category) => {
+        const filteredPosts = allPosts.filter((post) =>
+            post.data.categories.includes(category),
+        );
+        return {
+            params: { category },
+            props: { posts: filteredPosts },
+        };
+    });
+}
+
+const { category } = Astro.params;
+const { posts } = Astro.props;
+---
+
+<DefaultLayout>
+    <main
+        class="px-8 w-[25rem] min-[360px]:w-[30rem] md:w-[62.5rem] mx-auto min-h-screen"
+    >
+        <div class="flex justify-between items-center">
+            <p class="text-3xl font-semibold text-gray py-6">{category} ✨</p>
+            <p
+                class="text-2xl font-semibold text-white px-2 bg-gray-500 rounded-full"
+            >
+                {posts.length}
+            </p>
+        </div>
+        <ul>
+            {
+                posts.map((post) => (
+                    <BlogPost
+                        url={`/posts/${post.slug}/`}
+                        title={post.data.title}
+                        cover={post.data.cover}
+                        pubDate={post.data.pubDate}
+                        categories={post.data.categories}
+                        themecolor={post.data.themecolor}
+                    />
+                ))
+            }
+        </ul>
+    </main>
+</DefaultLayout>

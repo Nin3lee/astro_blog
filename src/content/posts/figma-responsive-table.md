@@ -1,6 +1,7 @@
 ---
 title: Figma技巧研习#1 自适应表格
 pubDate: '2023 年 11 月 14 日'
+date: 2023-11-14
 description: 探索表格在Figma中更高效的搭建方式。
 author: nin3
 readingtime: 10

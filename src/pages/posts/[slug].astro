@@ -4,8 +4,8 @@ import { getCollection } from "astro:content";
 import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
 
 export async function getStaticPaths() {
-    const blogEntries = await getCollection("posts");
-    return blogEntries.map((entry) => ({
+    const allPosts = await getCollection("posts");
+    return allPosts.map((entry) => ({
         params: { slug: entry.slug },
         props: { entry },
     }));
@@ -55,8 +55,9 @@ const { Content } = await entry.render();
                 <div
                     class="px-4 py-1 rounded-full bg-gradient-to-r from-[#7F94FF] to-[#B0BCFB] text-[#fff] text-[14px] leading-9 duration-300 hover:scale-90 cursor-pointer"
                 >
-                    测试
+                    {entry.data.tags}
                 </div>
+                <div>{tags.map((tag) => <p>{tag}</p>)}</div>
             </div>
             <div class="inline-block bg-gray-200 px-3 py-1 rounded-full my-2">
                 <Icon name="image" class="w-[20px] mr-1 inline" />
@@ -88,13 +89,13 @@ const { Content } = await entry.render();
                 <div class="mr-4 z-10">
                     <div class="text-base text-[#666]">发布于</div>
                     <div class="text-base text-black line-clamp-1">
-                        {entry.data.pubDate}
+                        {entry.data.pubDate.toString().slice(0, 10)}
                     </div>
                 </div>
                 <div class="mr-4 z-10">
                     <div class="text-base text-[#666]">更新于</div>
                     <div class="text-base text-black line-clamp-1">
-                        {entry.data.pubDate}
+                        {entry.data.pubDate.toString().slice(0, 10)}
                     </div>
                 </div>
                 <div class="mr-4 z-10">

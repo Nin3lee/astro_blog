@@ -1,6 +1,7 @@
 ---
 title: 新闻类APP设计系统分享
 pubDate: '2023 年 10 月 8 日'
+date: 2023-10-08
 author: nin3
 description: 本文是作者于2021年大学在校时期，基于当时的设计思路完成的新闻类APP设计系统虚题。
 readingtime: 10

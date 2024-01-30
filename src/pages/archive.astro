@@ -3,7 +3,10 @@ import { getCollection } from "astro:content";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import BlogPost from "../components/BlogPosts.astro";
 
-const allPosts = await getCollection("posts");
+// 按照时间顺序为文章排序
+const allPosts = (await getCollection("posts")).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
 ---
 
 <DefaultLayout>

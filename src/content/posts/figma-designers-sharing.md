@@ -13,6 +13,10 @@ categories: 经验
 themecolor: "text-green"
 cover: https://bu.dusays.com/2023/12/26/658a83013227f.png
 views: 2024
+cate: 
+  name: 代码
+  title: 经验分享
+  subtitle: Exp+
 ---
 ## \#1 我最喜欢的超棒教学 Lichin 👇🏻
 https://www.figma.com/@lichin

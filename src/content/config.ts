@@ -14,10 +14,35 @@ const postsCollection = defineCollection({
         cover: z.string(),
         views: z.number(),
         categories: z.string(),
-        themecolor: z.string()
+        themecolor: z.string(),
+        cate: z.object({
+            name: z.string(),
+            title: z.string(),
+            subtitle: z.string()
+        })
     })
 });
+
+const categoryCollection = defineCollection({
+    type: 'content',
+    schema: z.object({
+        title: z.string(),
+        subtitle: z.string(),
+        color: z.string()
+    })
+})
+
+const tagCollection = defineCollection({
+    type: 'data',
+    schema: z.object({
+        title: z.string(),
+        color: z.string()
+    })
+})
+
 // 导出一个单独的 `collections` 对象来注册你的集合
 export const collections = {
     posts: postsCollection,
+    category: categoryCollection,
+    tag: tagCollection,
 };

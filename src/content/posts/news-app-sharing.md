@@ -12,6 +12,10 @@ cover: https://bu.dusays.com/2023/12/26/658a83012e97b.png
 categories: 视觉
 themecolor: "text-blue"
 views: 2024
+cate: 
+  name: 代码
+  title: 视觉设计
+  subtitle: 视觉
 ---
 ### 搭载Iframe的实时预览
 Figma提供的Iframe嵌入代码允许我们实时的浏览该项目，支持便捷的缩放和全屏展示。

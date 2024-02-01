@@ -174,7 +174,30 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"posts": {
+		"category": {
+"code.md": {
+	id: "code.md";
+  slug: "code";
+  body: string;
+  collection: "category";
+  data: InferEntrySchema<"category">
+} & { render(): Render[".md"] };
+"muse.md": {
+	id: "muse.md";
+  slug: "muse";
+  body: string;
+  collection: "category";
+  data: InferEntrySchema<"category">
+} & { render(): Render[".md"] };
+};
+"posts": {
+"code-set.md": {
+	id: "code-set.md";
+  slug: "code-set";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
 "figma-designers-sharing.md": {
 	id: "figma-designers-sharing.md";
   slug: "figma-designers-sharing";
@@ -185,6 +208,20 @@ declare module 'astro:content' {
 "figma-responsive-table.md": {
 	id: "figma-responsive-table.md";
   slug: "figma-responsive-table";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"game-set.md": {
+	id: "game-set.md";
+  slug: "game-set";
+  body: string;
+  collection: "posts";
+  data: InferEntrySchema<"posts">
+} & { render(): Render[".md"] };
+"muse-set.md": {
+	id: "muse-set.md";
+  slug: "muse-set";
   body: string;
   collection: "posts";
   data: InferEntrySchema<"posts">
@@ -208,7 +245,9 @@ declare module 'astro:content' {
 	};
 
 	type DataEntryMap = {
-		
+		"tag": {
+};
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;

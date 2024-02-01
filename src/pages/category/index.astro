@@ -28,7 +28,7 @@ const categories = [
     {
         title: "+ 音乐推荐",
         number: "0",
-        subtitle: "音乐♪",
+        subtitle: "Muse♪",
         color: "from-purple-start to-purple-end",
     },
     {
@@ -38,6 +38,11 @@ const categories = [
         color: "from-cyan-start to-cyan-end",
     },
 ];
+const allPosts = await Astro.glob("../../content/posts/*.md");
+const category = [
+    ...new Set(allPosts.map((post) => post.frontmatter.categories).flat()),
+];
+const cate = [...new Set(allPosts.map((post) => post.frontmatter.cate).flat())];
 ---
 
 <DefaultLayout>
@@ -176,6 +181,25 @@ const categories = [
                             </div>
                         </div>
                     </a>
+                    {
+                        category.map((category) => (
+                            <a href={`/category/${category}`}>
+                                <div class="rounded-2xl bg-gradient-to-r from-cyan-start to-cyan-end duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6">
+                                    <div class="flex justify-between items-center">
+                                        <div class="text-xl text-white font-normal">
+                                            {category}
+                                        </div>
+                                        <div class="rounded-full bg-white px-2 text-lg text-cyan font-semibold">
+                                            {categories[5].number}
+                                        </div>
+                                    </div>
+                                    <div class="text-6xl text-white opacity-20 font-bold">
+                                        {cate[0].subtitle}
+                                    </div>
+                                </div>
+                            </a>
+                        ))
+                    }
                 </div>
             </div>
         </main>

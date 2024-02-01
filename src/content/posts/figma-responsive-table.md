@@ -14,6 +14,10 @@ categories: 经验
 themecolor: "text-green"
 cover: https://bu.dusays.com/2023/12/26/658a83012f3c4.png 
 views: 2024
+cate: 
+  name: 代码
+  title: 经验分享
+  subtitle: Exp+
 ---
 ### 搭建前的知识了解
 #### 设计工具选用

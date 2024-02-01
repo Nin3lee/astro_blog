@@ -11,6 +11,10 @@ cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
 categories: 测试
 themecolor: "text-cyan"
 views: 2024
+cate:
+  name: 代码
+  title: 测试模板
+  subtitle: Test+
 ---
 这是一个用来浏览和测试页面，<br>
 所有markdown文件在这里会被 typography 插件渲染成自定义的样式。（我是p标签）

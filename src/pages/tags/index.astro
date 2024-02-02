@@ -1,5 +1,42 @@
 ---
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
+const tags = [
+    {
+        title: "# Figma",
+        count: "2",
+        color: "from-orange-start to-orange-end",
+    },
+    {
+        title: "# UI设计",
+        count: "3",
+        color: "from-blue-start to-blue-end",
+    },
+    {
+        title: "# 表格组件",
+        count: "1",
+        color: "from-yellow-start to-yellow-end",
+    },
+    {
+        title: "# 实用技巧",
+        count: "1",
+        color: "from-green-start to-green-end",
+    },
+    {
+        title: "# 设计分享",
+        count: "1",
+        color: "from-cyan-start to-cyan-end",
+    },
+    {
+        title: "# 测试",
+        count: "1",
+        color: "from-purple-start to-purple-end",
+    },
+    {
+        title: "# 视觉设计",
+        count: "1",
+        color: "from-purple-start to-purple-end",
+    },
+];
 ---
 
 <DefaultLayout>
@@ -13,85 +50,99 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro";
                     >
                         <a href="/tags/Figma/">
                             <div
-                                class="rounded-full bg-gradient-to-r from-orange-start to-orange-end duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                class=`rounded-full bg-gradient-to-r ${tags[0].color} duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`
                             >
-                                <div class="text-white text-lg"># Figma</div>
+                                <div class="text-white text-lg">
+                                    {tags[0].title}
+                                </div>
                                 <div
                                     class="rounded-full bg-white px-2 text-lg text-orange font-semibold"
                                 >
-                                    2
+                                    {tags[0].count}
                                 </div>
                             </div>
                         </a>
                         <a href="/tags/UI设计/">
                             <div
-                                class="rounded-full bg-gradient-to-r from-blue-start to-blue-end duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                class=`rounded-full bg-gradient-to-r ${tags[1].color} duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`
                             >
-                                <div class="text-white text-lg"># UI设计</div>
+                                <div class="text-white text-lg">
+                                    {tags[1].title}
+                                </div>
                                 <div
                                     class="rounded-full bg-white px-2 text-lg text-blue font-semibold"
                                 >
-                                    3
+                                    {tags[1].count}
                                 </div>
                             </div>
                         </a>
                         <a href="/tags/表格组件/">
                             <div
-                                class="rounded-full bg-gradient-to-r from-yellow-start to-yellow-end duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                class=`rounded-full bg-gradient-to-r ${tags[2].color} duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`
                             >
-                                <div class="text-white text-lg"># 表格组件</div>
+                                <div class="text-white text-lg">
+                                    {tags[2].title}
+                                </div>
                                 <div
                                     class="rounded-full bg-white px-2 text-lg text-yellow font-semibold"
                                 >
-                                    1
+                                    {tags[2].count}
                                 </div>
                             </div>
                         </a>
                         <a href="/tags/实用技巧/">
                             <div
-                                class="rounded-full bg-gradient-to-r from-green-start to-green-end duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                class=`rounded-full bg-gradient-to-r ${tags[3].color} duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`
                             >
-                                <div class="text-white text-lg"># 实用技巧</div>
+                                <div class="text-white text-lg">
+                                    {tags[3].title}
+                                </div>
                                 <div
                                     class="rounded-full bg-white px-2 text-lg text-green font-semibold"
                                 >
-                                    1
+                                    {tags[3].count}
                                 </div>
                             </div>
                         </a>
                         <a href="/tags/设计分享/">
                             <div
-                                class="rounded-full bg-gradient-to-r from-purple-start to-purple-end duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                class=`rounded-full bg-gradient-to-r ${tags[4].color} duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`
                             >
-                                <div class="text-white text-lg"># 设计分享</div>
+                                <div class="text-white text-lg">
+                                    {tags[4].title}
+                                </div>
                                 <div
                                     class="rounded-full bg-white px-2 text-lg text-purple font-semibold"
                                 >
-                                    1
+                                    {tags[4].count}
                                 </div>
                             </div>
                         </a>
                         <a href="/tags/测试/">
                             <div
-                                class="rounded-full bg-gradient-to-r from-cyan-start to-cyan-end duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                class=`rounded-full bg-gradient-to-r ${tags[5].color} duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`
                             >
-                                <div class="text-white text-lg"># 测试</div>
+                                <div class="text-white text-lg">
+                                    {tags[5].title}
+                                </div>
                                 <div
                                     class="rounded-full bg-white px-2 text-lg text-cyan font-semibold"
                                 >
-                                    1
+                                    {tags[5].count}
                                 </div>
                             </div>
                         </a>
                         <a href="/tags/视觉设计/">
                             <div
-                                class="rounded-full bg-gradient-to-r from-red-start to-red-end duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4"
+                                class=`rounded-full bg-gradient-to-r ${tags[6].color} duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`
                             >
-                                <div class="text-white text-lg"># 视觉设计</div>
+                                <div class="text-white text-lg">
+                                    {tags[6].title}
+                                </div>
                                 <div
                                     class="rounded-full bg-white px-2 text-lg text-red font-semibold"
                                 >
-                                    1
+                                    {tags[6].count}
                                 </div>
                             </div>
                         </a>

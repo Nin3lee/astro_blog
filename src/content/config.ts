@@ -13,7 +13,6 @@ const postsCollection = defineCollection({
         tags: z.array(z.string()),
         cover: z.string(),
         views: z.number(),
-        categories: z.string(),
         themecolor: z.string(),
         cate: z.object({
             name: z.string(),

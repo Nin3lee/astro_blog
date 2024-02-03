@@ -8,11 +8,10 @@ readingtime: 10
 tags: 
   - 测试
 cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
-categories: 测试
-themecolor: "text-cyan"
+themecolor: cyan
 views: 2024
 cate:
-  name: 代码
+  name: 测试
   title: 测试模板
   subtitle: Test+
 ---

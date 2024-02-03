@@ -8,8 +8,7 @@ readingtime: 10
 tags: 
   - 代码测试
 cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
-categories: 代码
-themecolor: "text-orange"
+themecolor: orange
 views: 2024
 cate:
   name: 代码

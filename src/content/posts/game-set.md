@@ -8,11 +8,10 @@ readingtime: 10
 tags: 
   - 游戏测试
 cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
-categories: 游戏
-themecolor: "text-yellow"
+themecolor: yellow
 views: 2024
 cate:
-  name: 代码
+  name: 游戏
   title: 游戏有时
   subtitle: Gamer
 ---

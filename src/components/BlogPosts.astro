@@ -12,7 +12,7 @@ const { title, url, cover, pubDate, categories, themecolor } = Astro.props;
             class="flex flex-col p-4 md:p-12 h-[99px] md:h-[240px] lg:h-[280px] justify-between"
         >
             <div class="flex flex-col">
-                <div class={themecolor}>
+                <div class=`text-${themecolor}`>
                     <span class="text-xl font-semibold md:text-2xl md:mb-2"
                         >{categories}</span
                     >

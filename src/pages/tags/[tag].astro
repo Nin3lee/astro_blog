@@ -26,6 +26,8 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
+
+const filteredPosts = posts.filter((post) => post.data.tags.includes(tag));
 ---
 
 <DefaultLayout>
@@ -35,7 +37,7 @@ const { posts } = Astro.props;
         <div class="flex justify-between items-center">
             <p class="text-3xl font-semibold text-gray py-6">{tag} ✨</p>
             <p
-                class="text-2xl font-semibold text-white px-2 bg-gray-500 rounded-full"
+                class={`text-2xl font-semibold text-white px-2 bg-gray-500 rounded-full`}
             >
                 {posts.length}
             </p>
@@ -48,7 +50,7 @@ const { posts } = Astro.props;
                         title={post.data.title}
                         cover={post.data.cover}
                         pubDate={post.data.pubDate}
-                        categories={post.data.categories}
+                        categories={post.data.cate.name}
                         themecolor={post.data.themecolor}
                     />
                 ))

@@ -9,12 +9,11 @@ tags:
   - UI设计
   - Figma
   - 设计分享
-categories: 经验
-themecolor: "text-green"
+themecolor: green
 cover: https://bu.dusays.com/2023/12/26/658a83013227f.png
 views: 2024
 cate: 
-  name: 代码
+  name: 经验
   title: 经验分享
   subtitle: Exp+
 ---

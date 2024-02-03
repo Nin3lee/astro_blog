@@ -9,11 +9,10 @@ tags:
   - UI设计
   - 视觉设计
 cover: https://bu.dusays.com/2023/12/26/658a83012e97b.png
-categories: 视觉
-themecolor: "text-blue"
+themecolor: blue
 views: 2024
 cate: 
-  name: 代码
+  name: 视觉
   title: 视觉设计
   subtitle: 视觉
 ---

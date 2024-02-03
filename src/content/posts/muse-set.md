@@ -8,11 +8,10 @@ readingtime: 10
 tags: 
   - 音乐测试
 cover: https://bu.dusays.com/2023/12/26/658a9399299da.png
-categories: 音乐
-themecolor: "text-purple"
+themecolor: purple
 views: 2024
 cate:
-  name: 代码
+  name: 音乐
   title: 音乐推荐
   subtitle: Muse♪
 ---

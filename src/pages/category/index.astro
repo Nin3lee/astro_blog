@@ -1,43 +1,31 @@
 ---
+import { getCollection } from "astro:content";
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
-const categories = [
+
+const allPosts = await getCollection("posts");
+const categories: Record<
+    string,
+    { name: string; count: number; themecolor: string; subtitle: string }
+> = {};
+allPosts.forEach((post) => {
     {
-        title: "+ 代码钻研",
-        count: "0",
-        subtitle: "< / >",
-        color: "from-orange-start to-orange-end",
-    },
-    {
-        title: "+ 视觉设计",
-        count: "1",
-        subtitle: "视觉",
-        color: "from-blue-start to-blue-end",
-    },
-    {
-        title: "+ 游戏有时",
-        count: "0",
-        subtitle: "Gamer",
-        color: "from-yellow-start to-yellow-end",
-    },
-    {
-        title: "+ 经验分享",
-        count: "2",
-        subtitle: "EXP+",
-        color: "from-green-start to-green-end",
-    },
-    {
-        title: "+ 音乐推荐",
-        count: "0",
-        subtitle: "Muse♪",
-        color: "from-purple-start to-purple-end",
-    },
-    {
-        title: "+ 测试模板",
-        count: "1",
-        subtitle: "Test+",
-        color: "from-cyan-start to-cyan-end",
-    },
-];
+        const category = post.data.cate.title;
+        if (categories[category]) {
+            {
+                categories[category].count++;
+            }
+        } else {
+            {
+                categories[category] = {
+                    count: 1,
+                    name: post.data.cate.name,
+                    themecolor: post.data.themecolor,
+                    subtitle: post.data.cate.subtitle,
+                };
+            }
+        }
+    }
+});
 ---
 
 <DefaultLayout>
@@ -50,13 +38,13 @@ const categories = [
                 <div
                     class="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-6 py-6"
                 >
-                    <a href="/category/代码/">
+                    <!-- <a href="/category/代码/">
                         <div
-                            class=`rounded-2xl bg-gradient-to-r ${categories[0].color} duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`
+                            class=`rounded-2xl bg-gradient-to-r duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`
                         >
                             <div class="flex justify-between items-center">
                                 <div class="text-xl text-white font-normal">
-                                    {categories[0].title}
+                                    {categories[0].name}
                                 </div>
                                 <div
                                     class="rounded-full bg-white px-2 text-lg text-orange font-semibold"
@@ -70,112 +58,32 @@ const categories = [
                                 {categories[0].subtitle}
                             </div>
                         </div>
-                    </a>
-                    <a href="/category/视觉/">
-                        <div
-                            class=`rounded-2xl bg-gradient-to-r ${categories[1].color} duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`
-                        >
-                            <div class="flex justify-between items-center">
-                                <div class="text-xl text-white font-normal">
-                                    {categories[1].title}
-                                </div>
-                                <div
-                                    class="rounded-full bg-white px-2 text-lg text-blue font-semibold"
-                                >
-                                    {categories[1].count}
-                                </div>
-                            </div>
-                            <div
-                                class="text-6xl text-white opacity-20 font-bold"
-                            >
-                                {categories[1].subtitle}
-                            </div>
-                        </div>
-                    </a>
-                    <a href="/category/游戏/">
-                        <div
-                            class=`rounded-2xl bg-gradient-to-r ${categories[2].color} duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`
-                        >
-                            <div class="flex justify-between items-center">
-                                <div class="text-xl text-white font-normal">
-                                    {categories[2].title}
-                                </div>
-                                <div
-                                    class="rounded-full bg-white px-2 text-lg text-yellow font-semibold"
-                                >
-                                    {categories[2].count}
-                                </div>
-                            </div>
-                            <div
-                                class="text-6xl text-white opacity-20 font-bold"
-                            >
-                                {categories[2].subtitle}
-                            </div>
-                        </div>
-                    </a>
-                    <a href="/category/经验/">
-                        <div
-                            class=`rounded-2xl bg-gradient-to-r ${categories[3].color} duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`
-                        >
-                            <div class="flex justify-between items-center">
-                                <div class="text-xl text-white font-normal">
-                                    {categories[3].title}
-                                </div>
-                                <div
-                                    class="rounded-full bg-white px-2 text-lg text-green font-semibold"
-                                >
-                                    {categories[3].count}
-                                </div>
-                            </div>
-                            <div
-                                class="text-6xl text-white opacity-20 font-bold"
-                            >
-                                {categories[3].subtitle}
-                            </div>
-                        </div>
-                    </a>
-                    <a href="/category/音乐/">
-                        <div
-                            class=`rounded-2xl bg-gradient-to-r ${categories[4].color} duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`
-                        >
-                            <div class="flex justify-between items-center">
-                                <div class="text-xl text-white font-normal">
-                                    {categories[4].title}
-                                </div>
-                                <div
-                                    class="rounded-full bg-white px-2 text-lg text-purple font-semibold"
-                                >
-                                    {categories[4].count}
-                                </div>
-                            </div>
-                            <div
-                                class="text-6xl text-white opacity-20 font-bold"
-                            >
-                                {categories[4].subtitle}
-                            </div>
-                        </div>
-                    </a>
-                    <a href="/category/测试/">
-                        <div
-                            class=`rounded-2xl bg-gradient-to-r ${categories[5].color} duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`
-                        >
-                            <div class="flex justify-between items-center">
-                                <div class="text-xl text-white font-normal">
-                                    {categories[5].title}
-                                </div>
-                                <div
-                                    class="rounded-full bg-white px-2 text-lg text-cyan font-semibold"
-                                >
-                                    {categories[5].count}
-                                </div>
-                            </div>
-                            <div
-                                class="text-6xl text-white opacity-20 font-bold"
-                            >
-                                {categories[5].subtitle}
-                            </div>
-                        </div>
-                    </a>
+                    </a> -->
+                    {
+                        Object.entries(categories).map(
+                            ([category, description]) => (
+                                <a href={`/category/${description.name}`}>
+                                    <div
+                                        class={`from-${description.themecolor}-start to-${description.themecolor}-end rounded-2xl bg-gradient-to-r duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`}
+                                    >
+                                        <div class="flex justify-between items-center">
+                                            <div class="text-xl text-white font-normal">
+                                                {category}
+                                            </div>
+                                            <div
+                                                class={`text-${description.themecolor} rounded-full bg-white px-2 text-lg font-semibold`}
+                                            >
+                                                {description.count}
+                                            </div>
+                                        </div>
+                                        <div class="text-6xl text-white opacity-25 font-bold">
+                                            {description.subtitle}
+                                        </div>
+                                    </div>
+                                </a>
+                            ),
+                        )
+                    }
                 </div>
             </div>
         </main>

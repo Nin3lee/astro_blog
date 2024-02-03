@@ -22,7 +22,7 @@ const allPosts = (await getCollection("posts")).sort(
                         title={post.data.title}
                         cover={post.data.cover}
                         pubDate={post.data.pubDate}
-                        categories={post.data.categories}
+                        categories={post.data.cate.name}
                         themecolor={post.data.themecolor}
                     />
                 ))

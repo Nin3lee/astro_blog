@@ -24,26 +24,7 @@ const postsCollection = defineCollection({
     })
 });
 
-const categoryCollection = defineCollection({
-    type: 'content',
-    schema: z.object({
-        title: z.string(),
-        subtitle: z.string(),
-        color: z.string()
-    })
-})
-
-const tagCollection = defineCollection({
-    type: 'data',
-    schema: z.object({
-        title: z.string(),
-        color: z.string()
-    })
-})
-
 // 导出一个单独的 `collections` 对象来注册你的集合
 export const collections = {
-    posts: postsCollection,
-    category: categoryCollection,
-    tag: tagCollection,
+    posts: postsCollection
 };

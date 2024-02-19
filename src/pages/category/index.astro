@@ -38,27 +38,6 @@ allPosts.forEach((post) => {
                 <div
                     class="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-6 py-6"
                 >
-                    <!-- <a href="/category/代码/">
-                        <div
-                            class=`rounded-2xl bg-gradient-to-r duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`
-                        >
-                            <div class="flex justify-between items-center">
-                                <div class="text-xl text-white font-normal">
-                                    {categories[0].name}
-                                </div>
-                                <div
-                                    class="rounded-full bg-white px-2 text-lg text-orange font-semibold"
-                                >
-                                    {categories[0].count}
-                                </div>
-                            </div>
-                            <div
-                                class="text-6xl text-white opacity-25 font-bold"
-                            >
-                                {categories[0].subtitle}
-                            </div>
-                        </div>
-                    </a> -->
                     {
                         Object.entries(categories).map(
                             ([category, description]) => (

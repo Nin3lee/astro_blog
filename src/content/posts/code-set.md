@@ -14,4 +14,6 @@ cate:
   name: 代码
   title: 代码钻研
   subtitle:  < / >
+  style: text-orange
+  gradient: from-orange-start to-orange-end
 ---

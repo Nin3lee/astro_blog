@@ -15,6 +15,8 @@ cate:
   name: 视觉
   title: 视觉设计
   subtitle: 视觉
+  style: text-blue
+  gradient: from-blue-start to-blue-end
 ---
 ### 搭载Iframe的实时预览
 Figma提供的Iframe嵌入代码允许我们实时的浏览该项目，支持便捷的缩放和全屏展示。

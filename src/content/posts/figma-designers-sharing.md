@@ -16,6 +16,8 @@ cate:
   name: 经验
   title: 经验分享
   subtitle: Exp+
+  style: text-green
+  gradient: from-green-start to-green-end
 ---
 ## \#1 我最喜欢的超棒教学 Lichin 👇🏻
 https://www.figma.com/@lichin

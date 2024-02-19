@@ -14,5 +14,7 @@ cate:
   name: 音乐
   title: 音乐推荐
   subtitle: Muse♪
+  style: text-purple
+  gradient: from-purple-start to-purple-end
 ---
 1

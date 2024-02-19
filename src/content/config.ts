@@ -17,7 +17,9 @@ const postsCollection = defineCollection({
         cate: z.object({
             name: z.string(),
             title: z.string(),
-            subtitle: z.string()
+            subtitle: z.string(),
+            style: z.string(),
+            gradient: z.string(),
         })
     })
 });

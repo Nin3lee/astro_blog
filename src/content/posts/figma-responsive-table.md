@@ -17,6 +17,8 @@ cate:
   name: 经验
   title: 经验分享
   subtitle: Exp+
+  style: text-green
+  gradient: from-green-start to-green-end
 ---
 ### 搭建前的知识了解
 #### 设计工具选用

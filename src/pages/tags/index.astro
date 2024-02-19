@@ -4,13 +4,21 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro";
 
 const allPosts = await getCollection("posts");
 // 生成动态标签
-const tags: Record<string, { count: number; themecolor: string }> = {};
+const tags: Record<
+    string,
+    { count: number; themecolor: string; style: string; gradient: string }
+> = {};
 allPosts.forEach((post) => {
     post.data.tags.forEach((tag) => {
         if (tags[tag]) {
             tags[tag].count++;
         } else {
-            tags[tag] = { count: 1, themecolor: post.data.themecolor };
+            tags[tag] = {
+                count: 1,
+                themecolor: post.data.themecolor,
+                style: post.data.cate.style,
+                gradient: post.data.cate.gradient,
+            };
         }
     });
 });
@@ -27,16 +35,19 @@ allPosts.forEach((post) => {
                     >
                         {
                             Object.entries(tags).map(
-                                ([tag, { count, themecolor }]) => (
+                                ([
+                                    tag,
+                                    { count, themecolor, style, gradient },
+                                ]) => (
                                     <a href={`/tags/${tag}`}>
                                         <div
-                                            class={`from-${themecolor}-start to-${themecolor}-end rounded-full bg-gradient-to-r duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`}
+                                            class={`${gradient} rounded-full bg-gradient-to-r duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`}
                                         >
                                             <div class="text-white text-lg">
                                                 {tag}
                                             </div>
                                             <div
-                                                class={`rounded-full bg-white px-2 text-lg text-${themecolor} font-semibold`}
+                                                class={`rounded-full bg-white px-2 text-lg ${style} font-semibold`}
                                             >
                                                 {count}
                                             </div>

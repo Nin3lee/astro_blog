@@ -14,6 +14,8 @@ cate:
   name: 测试
   title: 测试模板
   subtitle: Test+
+  style: text-cyan
+  gradient: from-cyan-start to-cyan-end
 ---
 这是一个用来浏览和测试页面，<br>
 所有markdown文件在这里会被 typography 插件渲染成自定义的样式。（我是p标签）

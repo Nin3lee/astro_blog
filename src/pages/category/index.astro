@@ -5,7 +5,14 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro";
 const allPosts = await getCollection("posts");
 const categories: Record<
     string,
-    { name: string; count: number; themecolor: string; subtitle: string }
+    {
+        name: string;
+        count: number;
+        themecolor: string;
+        subtitle: string;
+        style: string;
+        gradient: string;
+    }
 > = {};
 allPosts.forEach((post) => {
     {
@@ -21,6 +28,8 @@ allPosts.forEach((post) => {
                     name: post.data.cate.name,
                     themecolor: post.data.themecolor,
                     subtitle: post.data.cate.subtitle,
+                    style: post.data.cate.style,
+                    gradient: post.data.cate.gradient,
                 };
             }
         }
@@ -43,7 +52,7 @@ allPosts.forEach((post) => {
                             ([category, description]) => (
                                 <a href={`/category/${description.name}`}>
                                     <div
-                                        class={`from-${description.themecolor}-start to-${description.themecolor}-end rounded-2xl bg-gradient-to-r duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`}
+                                        class={`${description.gradient} rounded-2xl bg-gradient-to-r duration-300 hover:scale-95 aspect-square flex flex-col justify-between p-6`}
                                     >
                                         <div class="flex justify-between items-center">
                                             <div class="text-xl text-white font-normal">

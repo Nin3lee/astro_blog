@@ -14,4 +14,6 @@ cate:
   name: 游戏
   title: 游戏有时
   subtitle: Gamer
+  style: text-yellow
+  gradient: from-yellow-start to-yellow-end
 ---

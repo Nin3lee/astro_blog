@@ -16,7 +16,7 @@ import { Icon } from "astro-icon";
         <div class="flex col-span-2 md:h-80" data-aos="fade-up">
             <a
                 href="posts/figma-designers-sharing"
-                class="bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden md:flex hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
+                class="bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden md:flex hover:shadow-lg hover:brightness-95 shadow-lg"
             >
                 <img
                     src="https://bu.dusays.com/2023/12/26/658a83013227f.png"
@@ -44,7 +44,7 @@ import { Icon } from "astro-icon";
         <div class="flex col-span-2 md:col-span-1" data-aos="fade-up">
             <a
                 href="posts/news-app-sharing "
-                class="bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
+                class="bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-lg"
             >
                 <img
                     src="https://bu.dusays.com/2023/12/26/658a83012e97b.png"
@@ -71,7 +71,7 @@ import { Icon } from "astro-icon";
         <div class="flex col-span-2 md:col-span-1" data-aos="fade-up">
             <a
                 href="posts/figma-responsive-table"
-                class="bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-lg md:shadow-none"
+                class="bg-white rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-lg"
             >
                 <img
                     src="https://bu.dusays.com/2023/12/26/658a83012f3c4.png"
@@ -105,7 +105,7 @@ import { Icon } from "astro-icon";
         <div class="flex" data-aos="fade-up">
             <a
                 href="posts/this-is-a-test"
-                class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-md md:shadow-none"
+                class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-md"
                 ><img
                     src="https://bu.dusays.com/2023/12/26/658a9399292f9.png"
                     alt="cover"
@@ -131,7 +131,7 @@ import { Icon } from "astro-icon";
         <div class="flex" data-aos="fade-up">
             <a
                 href="posts/this-is-a-test"
-                class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-md md:shadow-none"
+                class="flex bg-white h-40 rounded-2xl hover:scale-95 duration-300 overflow-hidden hover:shadow-lg hover:brightness-95 shadow-md"
                 ><img
                     src="https://bu.dusays.com/2023/12/26/658a9399299da.png"
                     alt="cover"
@@ -157,11 +157,12 @@ import { Icon } from "astro-icon";
     </div>
 </div>
 <div class="py-10 flex justify-end" data-aos="fade-up">
-    <div
-        class="text-[#333] hover:text-blue-500 hover:fill-blue-500 duration-300"
-    >
-        <a href="/archive/" class="flex items-center font-semibold">
-            <Icon name="click" />
+    <div class="text-[#333] group">
+        <a
+            href="/archive/"
+            class="flex items-center font-semibold group-hover:text-blue-500 duration-300"
+        >
+            <Icon name="click" class="group-hover:fill-blue-500 duration-300" />
             浏览归档</a
         >
     </div>

@@ -4,10 +4,8 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro";
 
 const allPosts = await getCollection("posts");
 // 生成动态标签
-const tags: Record<
-    string,
-    { count: number; themecolor: string; style: string; gradient: string }
-> = {};
+const tags: Record<string, { count: number; style: string; gradient: string }> =
+    {};
 allPosts.forEach((post) => {
     post.data.tags.forEach((tag) => {
         if (tags[tag]) {
@@ -15,7 +13,6 @@ allPosts.forEach((post) => {
         } else {
             tags[tag] = {
                 count: 1,
-                themecolor: post.data.themecolor,
                 style: post.data.cate.style,
                 gradient: post.data.cate.gradient,
             };
@@ -35,10 +32,7 @@ allPosts.forEach((post) => {
                     >
                         {
                             Object.entries(tags).map(
-                                ([
-                                    tag,
-                                    { count, themecolor, style, gradient },
-                                ]) => (
+                                ([tag, { count, style, gradient }]) => (
                                     <a href={`/tags/${tag}`}>
                                         <div
                                             class={`${gradient} rounded-full bg-gradient-to-r duration-300 hover:scale-95 h-16 flex flex-row justify-between items-center px-4`}

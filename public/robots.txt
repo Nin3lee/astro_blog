@@ -2,3 +2,7 @@
 # 全部语法：https://developers.google.com/search/docs/advanced/robots/create-robots-txt
 User-agent: *
 Allow: /
+
+# 禁止GPTBot爬虫抓取
+User-agent: GPTBot
+Disallow: /

@@ -1,5 +1,6 @@
 ---
 import DefaultLayout from "@layouts/DefaultLayout.astro";
+import avatar from "../images/nin3_avatar.png";
 ---
 
 <DefaultLayout>
@@ -8,44 +9,41 @@ import DefaultLayout from "@layouts/DefaultLayout.astro";
             class="px-8 w-[25rem] min-[360px]:w-[30rem] md:w-[62.5rem] mx-auto"
         >
             <div class="min-h-screen my-6">
-                <img
-                    src="https://bu.dusays.com/2023/11/20/655ad33a882a.png"
-                    alt="avatar"
-                    class="w-20"
-                />
-                <div class="flex">
-                    <div class="text-3xl">看起来是个</div>
-                    <div
-                        class="relative mx-2 h-11 w-48 border-2 border-blue text-3xl"
-                    >
-                        &lt; Designer &frasl; &gt;
-                        <div
-                            class="absolute h-5 w-5 -left-2 -top-2 bg-slate-100 border-2 border-blue"
+                <img src={avatar.src} alt="avatar" class="w-20" />
+                <h1 class="text-3xl font-medium leading-normal">
+                    <span class="inline-flex mt-5 text-clip">
+                        <span>看起来是个</span>
+                        <span
+                            class="relative mx-2 outline outline-2 outline-blue outline-offset-4 underline decoration-blue select-all hover:bg-blue-200 duration-300"
                         >
-                        </div>
-                        <div
-                            class="absolute h-5 w-5 -right-2 -top-2 bg-slate-100 border-2 border-blue"
-                        >
-                        </div>
-                        <div
-                            class="absolute h-5 w-5 -left-2 -bottom-2 bg-slate-100 border-2 border-blue"
-                        >
-                        </div>
-                        <div
-                            class="absolute h-5 w-5 -right-2 -bottom-2 bg-slate-100 border-2 border-blue"
-                        >
-                        </div>
-                        <div
-                            class="absolute top-7 left-3 w-40 border-b-2 border-blue"
-                        >
-                        </div>
+                            Designer
+                            <span
+                                class="absolute h-5 w-5 -left-4 -top-4 bg-slate-100 border-2 border-blue"
+                            >
+                            </span>
+                            <span
+                                class="absolute h-5 w-5 -right-4 -top-4 bg-slate-100 border-2 border-blue"
+                            >
+                            </span>
+                            <span
+                                class="absolute h-5 w-5 -left-4 -bottom-4 bg-slate-100 border-2 border-blue"
+                            >
+                            </span>
+                            <span
+                                class="absolute h-5 w-5 -right-4 -bottom-4 bg-slate-100 border-2 border-blue"
+                            >
+                            </span>
+                        </span>
+                    </span>，
+                    <span class="font-mono">&lt;</span>
+                    Developer
+                    <span class="font-mono"> /&gt;</span>，
+                    <br />
+
+                    <div class="mt-4">
+                        <span class="">敲敲代码，搞搞设计，写写博客。</span>
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="text-3xl">
-                        敲敲代码💻，搞搞设计🎨，写写博客✏️
-                    </div>
-                </div>
+                </h1>
             </div>
         </main>
     </div>

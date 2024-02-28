@@ -10,8 +10,10 @@ import avatar from "../images/nin3_avatar.png";
         >
             <div class="min-h-screen my-6">
                 <img src={avatar.src} alt="avatar" class="w-20" />
-                <h1 class="text-3xl font-medium leading-normal">
-                    <span class="inline-flex mt-5 text-clip">
+                <h1
+                    class="text-3xl md:text-4xl font-medium leading-normal mb-10"
+                >
+                    <span class="inline-flex mt-5">
                         <span>看起来是个</span>
                         <span
                             class="relative mx-2 outline outline-2 outline-blue outline-offset-4 underline decoration-blue select-all hover:bg-blue-200 duration-300"
@@ -35,15 +37,48 @@ import avatar from "../images/nin3_avatar.png";
                             </span>
                         </span>
                     </span>，
-                    <span class="font-mono">&lt;</span>
-                    Developer
-                    <span class="font-mono"> /&gt;</span>，
+                    <span class="whitespace-nowrap">
+                        <span class="font-mono">&lt;</span>
+                        <span class="select-all hover:bg-blue-200 duration-300"
+                            >Developer</span
+                        >
+                        <span class="font-mono"> /&gt;</span></span
+                    >，
                     <br />
-
-                    <div class="mt-4">
-                        <span class="">敲敲代码，搞搞设计，写写博客。</span>
+                    <div class="md:mt-6">
+                        <span class="whitespace-nowrap group"
+                            ><ruby
+                                >敲<rt
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-200 ease-in-out"
+                                    >qiāo</rt
+                                ></ruby
+                            >代码，<ruby
+                                >搞<rt
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-200 ease-in-out delay-100"
+                                    >gǎo</rt
+                                ></ruby
+                            >设计，<ruby
+                                >写<rt
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-200 ease-in-out delay-200"
+                                    >xiě</rt
+                                ></ruby
+                            >博客。</span
+                        >
                     </div>
                 </h1>
+                <div class="text-3xl font-medium">
+                    🚧 看起来这里还在施工中 🚧
+                </div>
+                <div class="grid grid-cols-2 grid-rows-3 gap-4 my-10">
+                    <div
+                        class="rounded-md grid grid-rows-subgrid row-span-2 gap-4"
+                    >
+                        <div class="bg-blue-50 rounded-md">01/1</div>
+                        <div class="bg-blue-50 rounded-md">01/2</div>
+                    </div>
+                    <div class="bg-blue-50 rounded-md row-span-2">02</div>
+                    <div class="bg-blue-50 rounded-md col-span-2 h-60">03</div>
+                </div>
             </div>
         </main>
     </div>

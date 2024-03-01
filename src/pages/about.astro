@@ -1,6 +1,7 @@
 ---
 import DefaultLayout from "@layouts/DefaultLayout.astro";
 import avatar from "../images/nin3_avatar.png";
+import { Icon } from "astro-icon";
 ---
 
 <DefaultLayout>
@@ -49,17 +50,17 @@ import avatar from "../images/nin3_avatar.png";
                         <span class="whitespace-nowrap group"
                             ><ruby
                                 >敲<rt
-                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-200 ease-in-out"
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-150 ease-in-out"
                                     >qiāo</rt
                                 ></ruby
                             >代码，<ruby
                                 >搞<rt
-                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-200 ease-in-out delay-100"
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-150 ease-in-out delay-100"
                                     >gǎo</rt
                                 ></ruby
                             >设计，<ruby
                                 >写<rt
-                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-200 ease-in-out delay-200"
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-150 ease-in-out delay-200"
                                     >xiě</rt
                                 ></ruby
                             >博客。</span
@@ -70,14 +71,161 @@ import avatar from "../images/nin3_avatar.png";
                     🚧 看起来这里还在施工中 🚧
                 </div>
                 <div class="grid grid-cols-2 grid-rows-3 gap-4 my-10">
+                    <div class="bg-white rounded-3xl h-60">01</div>
+                    <div class="row-span-2 bg-white rounded-3xl">02</div>
+                    <div class="bg-white rounded-3xl">03</div>
                     <div
-                        class="rounded-md grid grid-rows-subgrid row-span-2 gap-4"
+                        class="col-span-2 bg-white rounded-3xl flex flex-wrap justify-center items-center px-10"
                     >
-                        <div class="bg-blue-50 rounded-md">01/1</div>
-                        <div class="bg-blue-50 rounded-md">01/2</div>
+                        <a
+                            href="http://figma.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex hover:grow duration-150 hover:bg-[#333] group"
+                            ><Icon
+                                name="tool-figma-default"
+                                class="hidden w-20 h-20 group-hover:inline-block"
+                            /><Icon
+                                name="tool-figma-change"
+                                class="w-20 h-20 group-hover:hidden"
+                            />
+                            <div class="flex flex-col justify-center">
+                                <p
+                                    class="hidden group-hover:inline-block text-white font-bold"
+                                >
+                                    Figma
+                                </p>
+                                <p
+                                    class="hidden group-hover:inline-block text-white text-sm"
+                                >
+                                    我站的所有封面和原型设计都使用Figma来完成！
+                                </p>
+                            </div></a
+                        >
+                        <a
+                            href="https://www.behance.net/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex hover:grow duration-150 hover:bg-[#1769ff] group"
+                        >
+                            <Icon
+                                name="tool-behance"
+                                class="w-20 h-20 fill-[#7c7c7c] group-hover:fill-[#FFFFFF]"
+                            />
+                            <div class="flex flex-col justify-center">
+                                <p
+                                    class="hidden group-hover:inline-block text-white font-bold"
+                                >
+                                    Behance
+                                </p>
+                                <p
+                                    class="hidden group-hover:inline-block text-white text-sm"
+                                >
+                                    良好的封面设计风格参考当然少不了Behance啦~
+                                </p>
+                            </div></a
+                        >
+                        <a
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex hover:grow duration-150 hover:bg-[#333] group"
+                        >
+                            <Icon
+                                name="tool-github"
+                                class="w-20 h-20 fill-[#7c7c7c] group-hover:fill-[#FFFFFF]"
+                            />
+                            <div class="flex flex-col justify-center">
+                                <p
+                                    class="hidden group-hover:inline-block text-white font-bold"
+                                >
+                                    Github
+                                </p>
+                                <p
+                                    class="hidden group-hover:inline-block text-white text-sm"
+                                >
+                                    我站的源代码都存储在这里呢!
+                                </p>
+                            </div></a
+                        >
+                        <a
+                            href="https://astro.build/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex hover:grow duration-150 hover:bg-[#333] group"
+                        >
+                            <Icon
+                                name="tool-astro-default"
+                                class="w-20 h-20 group-hover:hidden"
+                            />
+                            <Icon
+                                name="tool-astro-change"
+                                class="hidden w-20 h-20 group-hover:inline-block"
+                            />
+                            <div class="flex flex-col justify-center">
+                                <p
+                                    class="hidden group-hover:inline-block text-white font-bold"
+                                >
+                                    Astro
+                                </p>
+                                <p
+                                    class="hidden group-hover:inline-block text-white text-sm"
+                                >
+                                    我站的框架是Astro，内容驱动，没有JS代码阻塞的群岛！
+                                </p>
+                            </div>
+                            <a
+                                href="https://tailwindcss.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex hover:grow duration-150 hover:bg-[#109BFF] group"
+                            >
+                                <Icon
+                                    name="tool-tailwind"
+                                    class="w-20 h-20 fill-[#7c7c7c] group-hover:fill-[#FFFFFF]"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <p
+                                        class="hidden group-hover:inline-block text-white font-bold"
+                                    >
+                                        Tailwind
+                                    </p>
+                                    <p
+                                        class="hidden group-hover:inline-block text-white text-sm"
+                                    >
+                                        抱着学习和尝试的态度试了试，结果停不下来~
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="https://www.netlify.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex hover:grow duration-150 hover:bg-[#DCFFEC] group"
+                            >
+                                <Icon
+                                    name="tool-netlify-default"
+                                    class="w-20 h-20 group-hover:hidden"
+                                />
+                                <Icon
+                                    name="tool-netlify-change"
+                                    class="hidden w-20 h-20 group-hover:inline-block"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <p
+                                        class="hidden group-hover:inline-block text-[#014847] font-bold"
+                                    >
+                                        Netlify
+                                    </p>
+                                    <p
+                                        class="hidden group-hover:inline-block text-[#014847] text-sm"
+                                    >
+                                        网站部署就找他，国内访问挺快的!
+                                    </p>
+                                </div>
+                            </a>
+                        </a>
                     </div>
-                    <div class="bg-blue-50 rounded-md row-span-2">02</div>
-                    <div class="bg-blue-50 rounded-md col-span-2 h-60">03</div>
                 </div>
             </div>
         </main>

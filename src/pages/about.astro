@@ -75,105 +75,119 @@ import { Icon } from "astro-icon";
                     <div class="row-span-2 bg-white rounded-3xl">02</div>
                     <div class="bg-white rounded-3xl">03</div>
                     <div
-                        class="col-span-2 bg-white rounded-3xl flex flex-wrap justify-center items-center px-10"
+                        class="col-span-2 bg-white rounded-3xl flex flex-col justify-center md:justify-evenly"
                     >
-                        <a
-                            href="http://figma.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="flex hover:grow duration-150 hover:bg-[#333] group"
-                            ><Icon
-                                name="tool-figma-default"
-                                class="hidden w-20 h-20 group-hover:inline-block"
-                            /><Icon
-                                name="tool-figma-change"
-                                class="w-20 h-20 group-hover:hidden"
-                            />
-                            <div class="flex flex-col justify-center">
-                                <p
-                                    class="hidden group-hover:inline-block text-white font-bold"
-                                >
-                                    Figma
-                                </p>
-                                <p
-                                    class="hidden group-hover:inline-block text-white text-sm"
-                                >
-                                    我站的所有封面和原型设计都使用Figma来完成！
-                                </p>
-                            </div></a
-                        >
-                        <a
-                            href="https://www.behance.net/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="flex hover:grow duration-150 hover:bg-[#1769ff] group"
-                        >
-                            <Icon
-                                name="tool-behance"
-                                class="w-20 h-20 fill-[#7c7c7c] group-hover:fill-[#FFFFFF]"
-                            />
-                            <div class="flex flex-col justify-center">
-                                <p
-                                    class="hidden group-hover:inline-block text-white font-bold"
-                                >
-                                    Behance
-                                </p>
-                                <p
-                                    class="hidden group-hover:inline-block text-white text-sm"
-                                >
-                                    良好的封面设计风格参考当然少不了Behance啦~
-                                </p>
-                            </div></a
-                        >
-                        <a
-                            href="https://github.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="flex hover:grow duration-150 hover:bg-[#333] group"
-                        >
-                            <Icon
-                                name="tool-github"
-                                class="w-20 h-20 fill-[#7c7c7c] group-hover:fill-[#FFFFFF]"
-                            />
-                            <div class="flex flex-col justify-center">
-                                <p
-                                    class="hidden group-hover:inline-block text-white font-bold"
-                                >
-                                    Github
-                                </p>
-                                <p
-                                    class="hidden group-hover:inline-block text-white text-sm"
-                                >
-                                    我站的源代码都存储在这里呢!
-                                </p>
-                            </div></a
-                        >
-                        <a
-                            href="https://astro.build/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="flex hover:grow duration-150 hover:bg-[#333] group"
-                        >
-                            <Icon
-                                name="tool-astro-default"
-                                class="w-20 h-20 group-hover:hidden"
-                            />
-                            <Icon
-                                name="tool-astro-change"
-                                class="hidden w-20 h-20 group-hover:inline-block"
-                            />
-                            <div class="flex flex-col justify-center">
-                                <p
-                                    class="hidden group-hover:inline-block text-white font-bold"
-                                >
-                                    Astro
-                                </p>
-                                <p
-                                    class="hidden group-hover:inline-block text-white text-sm"
-                                >
-                                    我站的框架是Astro，内容驱动，没有JS代码阻塞的群岛！
-                                </p>
+                        <div class="flex flex-col items-center justify-center">
+                            <div
+                                class="font-bold text-blue text-4xl font-[SFMono-Regular]"
+                            >
+                                04
                             </div>
+                            <div class="text-gray font-medium text-2xl">
+                                本站创作过程中使用的工具
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-wrap gap-x-10 md:gap-x-0 justify-center"
+                        >
+                            <a
+                                href="http://figma.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex hover:grow duration-150 hover:bg-[#333] group"
+                                ><Icon
+                                    name="tool-figma-default"
+                                    class="hidden w-20 h-20 group-hover:inline-block"
+                                /><Icon
+                                    name="tool-figma-change"
+                                    class="w-20 h-20 group-hover:hidden"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <p
+                                        class="hidden group-hover:inline-block text-white font-bold"
+                                    >
+                                        Figma
+                                    </p>
+                                    <p
+                                        class="hidden md:group-hover:inline-block text-white text-sm"
+                                    >
+                                        我站的所有封面和原型设计都使用Figma来完成！
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="https://www.behance.net/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex hover:grow duration-150 hover:bg-[#1769ff] group"
+                            >
+                                <Icon
+                                    name="tool-behance"
+                                    class="w-20 h-20 fill-[#7c7c7c] group-hover:fill-[#FFFFFF]"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <p
+                                        class="hidden group-hover:inline-block text-white font-bold"
+                                    >
+                                        Behance
+                                    </p>
+                                    <p
+                                        class="hidden md:group-hover:inline-block text-white text-sm"
+                                    >
+                                        良好的封面设计风格参考当然少不了Behance啦~
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex hover:grow duration-150 hover:bg-[#333] group"
+                            >
+                                <Icon
+                                    name="tool-github"
+                                    class="w-20 h-20 fill-[#7c7c7c] group-hover:fill-[#FFFFFF]"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <p
+                                        class="hidden group-hover:inline-block text-white font-bold"
+                                    >
+                                        Github
+                                    </p>
+                                    <p
+                                        class="hidden md:group-hover:inline-block text-white text-sm"
+                                    >
+                                        我站的源代码都存储在这里呢!
+                                    </p>
+                                </div>
+                            </a>
+                            <a
+                                href="https://astro.build/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex hover:grow duration-150 hover:bg-[#333] group"
+                            >
+                                <Icon
+                                    name="tool-astro-default"
+                                    class="w-20 h-20 group-hover:hidden"
+                                />
+                                <Icon
+                                    name="tool-astro-change"
+                                    class="hidden w-20 h-20 group-hover:inline-block"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <p
+                                        class="hidden group-hover:inline-block text-white font-bold"
+                                    >
+                                        Astro
+                                    </p>
+                                    <p
+                                        class="hidden md:group-hover:inline-block text-white text-sm"
+                                    >
+                                        我站的框架是Astro，内容驱动，没有JS代码阻塞的群岛！
+                                    </p>
+                                </div>
+                            </a>
                             <a
                                 href="https://tailwindcss.com/"
                                 target="_blank"
@@ -191,7 +205,7 @@ import { Icon } from "astro-icon";
                                         Tailwind
                                     </p>
                                     <p
-                                        class="hidden group-hover:inline-block text-white text-sm"
+                                        class="hidden md:group-hover:inline-block text-white text-sm"
                                     >
                                         抱着学习和尝试的态度试了试，结果停不下来~
                                     </p>
@@ -218,13 +232,13 @@ import { Icon } from "astro-icon";
                                         Netlify
                                     </p>
                                     <p
-                                        class="hidden group-hover:inline-block text-[#014847] text-sm"
+                                        class="hidden md:group-hover:inline-block text-[#014847] text-sm"
                                     >
                                         网站部署就找他，国内访问挺快的!
                                     </p>
                                 </div>
                             </a>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -94,6 +96,11 @@ export default {
 				}
 			}
 		},
+		fontFamily: {
+			sans: ['PingFang', ...defaultTheme.fontFamily.sans],
+			serif: ['PingFang', ...defaultTheme.fontFamily.serif],
+			mono: ['Consolas', ...defaultTheme.fontFamily.mono]
+		}
 	},
 	plugins: [
 		require('@tailwindcss/typography'),

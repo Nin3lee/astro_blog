@@ -94,6 +94,10 @@ export default {
 						}
 					]
 				}
+			},
+			transitionTimingFunction: {
+				'curve-in': 'cubic-bezier(.08,.82,.2,1)',
+				'curve-out': 'cubic-bezier(.95,.05,.8,.04)'
 			}
 		},
 		fontFamily: {

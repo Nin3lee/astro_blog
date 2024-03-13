@@ -5,6 +5,11 @@ import { Icon } from "astro-icon";
 ---
 
 <DefaultLayout>
+    <div
+        class="bg-yellow/30 py-3 text-xl font-medium flex justify-center z-30 sticky top-[48px] backdrop-blur-lg"
+    >
+        🚧 看起来这里还在施工中 🚧
+    </div>
     <div class="bg-[#F9F9F9]">
         <main
             class="px-8 w-[25rem] min-[360px]:w-[30rem] md:w-[62.5rem] mx-auto"
@@ -12,7 +17,7 @@ import { Icon } from "astro-icon";
             <div class="min-h-screen my-6">
                 <img src={avatar.src} alt="avatar" class="w-20" />
                 <h1
-                    class="text-3xl md:text-4xl font-medium leading-normal mb-10"
+                    class="text-xl md:text-2xl font-medium leading-normal mb-10 group"
                 >
                     <span class="inline-flex mt-5">
                         <span>看起来是个</span>
@@ -47,7 +52,7 @@ import { Icon } from "astro-icon";
                     >，
                     <br />
                     <div class="md:mt-6">
-                        <span class="whitespace-nowrap group"
+                        <span class="whitespace-nowrap"
                             ><ruby
                                 >敲<rt
                                     class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-150 ease-in-out"
@@ -67,21 +72,74 @@ import { Icon } from "astro-icon";
                         >
                     </div>
                 </h1>
-                <div class="text-3xl font-medium">
-                    🚧 看起来这里还在施工中 🚧
-                </div>
-                <div class="grid grid-cols-2 grid-rows-3 gap-4 my-10">
-                    <div class="bg-white rounded-3xl h-60">01</div>
-                    <div class="row-span-2 bg-white rounded-3xl">02</div>
-                    <div class="bg-white rounded-3xl">03</div>
+
+                <div class="grid grid-cols-2 grid-rows-4 gap-4 my-10">
                     <div
-                        class="col-span-2 bg-white rounded-3xl flex flex-col justify-center md:justify-evenly"
+                        class="col-span-2 bg-white rounded-3xl flex justify-center items-center"
+                    >
+                        <div class="absolute flex">
+                            <div
+                                class="w-48 h-40 bg-[#FFF6E6] rotate-6 hover:rotate-0 hover:z-10 duration-150 shadow-dark rounded-sm flex items-center overflow-hidden"
+                            >
+                                <img
+                                    src="https://bu.dusays.com/2024/03/13/65f1752436aa9.jpg"
+                                    alt=""
+                                    class="w-full h-full p-3"
+                                />
+                            </div>
+                            <div
+                                class="w-48 h-40 bg-[#EEEEEE] rotate-3 hover:rotate-0 hover:z-10 duration-150 shadow-dark -ml-36 md:ml-4 rounded-sm overflow-hidden"
+                            >
+                                <img
+                                    src="https://bu.dusays.com/2024/03/13/65f194928b6ac.jpg"
+                                    alt=""
+                                    class="w-full h-full p-3"
+                                />
+                            </div>
+                            <div
+                                class="w-48 h-40 bg-[#FFF6E6] rotate-6 hover:rotate-0 hover:z-10 duration-150 shadow-dark -ml-36 md:ml-4 rounded-sm overflow-hidden"
+                            >
+                                <img
+                                    src="https://bu.dusays.com/2024/03/13/65f192960ff2f.jpg"
+                                    alt=""
+                                    class="w-full h-full p-3"
+                                />
+                            </div>
+                            <div
+                                class="w-48 h-40 bg-[#EEEEEE] rotate-3 hover:rotate-0 hover:z-10 duration-150 shadow-dark -ml-36 md:ml-4 rounded-sm overflow-hidden"
+                            >
+                                <img
+                                    src="https://bu.dusays.com/2024/03/13/65f191013a526.jpg"
+                                    alt=""
+                                    class="w-full h-full p-3"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-3xl h-60">02</div>
+                    <div class="row-span-2 bg-white rounded-3xl">03</div>
+                    <div
+                        class="bg-white rounded-3xl flex flex-col justify-center"
+                    >
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="font-bold text-blue text-4xl font-[SFMono-Regular]"
+                            >
+                                04
+                            </div>
+                            <div class="text-gray font-medium text-2xl">
+                                control
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-2 bg-white rounded-3xl flex flex-col justify-center md:justify-evenly py-10"
                     >
                         <div class="flex flex-col items-center justify-center">
                             <div
                                 class="font-bold text-blue text-4xl font-[SFMono-Regular]"
                             >
-                                04
+                                05
                             </div>
                             <div class="text-gray font-medium text-2xl">
                                 本站创作过程中使用的工具

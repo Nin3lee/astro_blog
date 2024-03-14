@@ -26,19 +26,19 @@ import { Icon } from "astro-icon";
                         >
                             Designer
                             <span
-                                class="absolute h-5 w-5 -left-4 -top-4 bg-slate-100 border-2 border-blue"
+                                class="absolute h-4 w-4 md:h-5 md:w-5 -left-4 -top-4 bg-slate-100 border-2 border-blue"
                             >
                             </span>
                             <span
-                                class="absolute h-5 w-5 -right-4 -top-4 bg-slate-100 border-2 border-blue"
+                                class="absolute h-4 w-4 md:h-5 md:w-5 -right-4 -top-4 bg-slate-100 border-2 border-blue"
                             >
                             </span>
                             <span
-                                class="absolute h-5 w-5 -left-4 -bottom-4 bg-slate-100 border-2 border-blue"
+                                class="absolute h-4 w-4 md:h-5 md:w-5 -left-4 -bottom-4 bg-slate-100 border-2 border-blue"
                             >
                             </span>
                             <span
-                                class="absolute h-5 w-5 -right-4 -bottom-4 bg-slate-100 border-2 border-blue"
+                                class="absolute h-4 w-4 md:h-5 md:w-5 -right-4 -bottom-4 bg-slate-100 border-2 border-blue"
                             >
                             </span>
                         </span>
@@ -51,73 +51,143 @@ import { Icon } from "astro-icon";
                         <span class="font-mono"> /&gt;</span></span
                     >，
                     <br />
+                    <br class="md:hidden" />
                     <div class="md:mt-6">
                         <span class="whitespace-nowrap"
                             ><ruby
                                 >敲<rt
-                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-150 ease-in-out"
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 text-blue duration-150 ease-in-out"
                                     >qiāo</rt
                                 ></ruby
                             >代码，<ruby
                                 >搞<rt
-                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-150 ease-in-out delay-100"
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 text-blue duration-150 ease-in-out delay-100"
                                     >gǎo</rt
                                 ></ruby
                             >设计，<ruby
                                 >写<rt
-                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 transition text-blue duration-150 ease-in-out delay-200"
+                                    class="opacity-0 group-hover:opacity-100 group-hover:-translate-y-0.5 text-blue duration-150 ease-in-out delay-200"
                                     >xiě</rt
                                 ></ruby
                             >博客。</span
                         >
                     </div>
                 </h1>
-
                 <div class="grid grid-cols-2 grid-rows-4 gap-4 my-10">
                     <div
                         class="col-span-2 bg-white rounded-3xl flex justify-center items-center"
                     >
-                        <div class="absolute flex">
-                            <div
-                                class="w-48 h-40 bg-[#FFF6E6] rotate-6 hover:rotate-0 hover:z-10 duration-150 shadow-dark rounded-sm flex items-center overflow-hidden"
-                            >
-                                <img
-                                    src="https://bu.dusays.com/2024/03/13/65f1752436aa9.jpg"
-                                    alt=""
-                                    class="w-full h-full p-3"
-                                />
+                        <div class="absolute flex gap-8 md:gap-10">
+                            <div class="flex flex-col gap-8 items-center group">
+                                <div
+                                    class="opacity-0 group-hover:opacity-100 group-hover:translate-y-1 duration-150"
+                                >
+                                    <div
+                                        class="flex flex-col items-center gap-2"
+                                    >
+                                        <p class="text-blue font-bold">
+                                            2022.7.4
+                                        </p>
+                                        <p class="text-gray font-bold">
+                                            映射在玻璃上的光影
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-48 h-40 bg-[#FFF6E6] hover:rotate-0 rotate-6 hover:z-10 duration-150 shadow-dark rounded-sm flex items-center overflow-hidden grayscale-[75%] hover:grayscale-0 hover:scale-110"
+                                >
+                                    <img
+                                        src="https://bu.dusays.com/2024/03/13/65f1752436aa9.jpg"
+                                        alt="映射在玻璃上的光影"
+                                        class="w-full h-full p-3"
+                                    />
+                                </div>
                             </div>
                             <div
-                                class="w-48 h-40 bg-[#EEEEEE] rotate-3 hover:rotate-0 hover:z-10 duration-150 shadow-dark -ml-36 md:ml-4 rounded-sm overflow-hidden"
+                                class="flex flex-col gap-8 -ml-44 md:-ml-4 items-center group"
                             >
-                                <img
-                                    src="https://bu.dusays.com/2024/03/13/65f194928b6ac.jpg"
-                                    alt=""
-                                    class="w-full h-full p-3"
-                                />
+                                <div
+                                    class="opacity-0 group-hover:opacity-100 group-hover:translate-y-1 duration-150"
+                                >
+                                    <div
+                                        class="flex flex-col items-center gap-2"
+                                    >
+                                        <p class="text-blue font-bold">
+                                            2022.7.21
+                                        </p>
+                                        <p class="text-gray font-bold">
+                                            在飞往哈尔滨的飞机上
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-48 h-40 bg-[#E6F0FF] hover:rotate-0 rotate-3 hover:z-10 duration-150 shadow-dark rounded-sm overflow-hidden grayscale-[75%] hover:grayscale-0 hover:scale-110"
+                                >
+                                    <img
+                                        src="https://bu.dusays.com/2024/03/13/65f194928b6ac.jpg"
+                                        alt="在飞往哈尔滨的飞机上"
+                                        class="w-full h-full p-3"
+                                    />
+                                </div>
                             </div>
                             <div
-                                class="w-48 h-40 bg-[#FFF6E6] rotate-6 hover:rotate-0 hover:z-10 duration-150 shadow-dark -ml-36 md:ml-4 rounded-sm overflow-hidden"
+                                class="flex flex-col gap-8 -ml-44 md:-ml-4 items-center group"
                             >
-                                <img
-                                    src="https://bu.dusays.com/2024/03/13/65f192960ff2f.jpg"
-                                    alt=""
-                                    class="w-full h-full p-3"
-                                />
+                                <div
+                                    class="opacity-0 group-hover:opacity-100 group-hover:translate-y-1 duration-150"
+                                >
+                                    <div
+                                        class="flex flex-col items-center gap-2"
+                                    >
+                                        <p class="text-blue font-bold">
+                                            2021.11.13
+                                        </p>
+                                        <p class="text-gray font-bold">
+                                            Blender的一次练习
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-48 h-40 bg-[#FFF6E6] hover:rotate-0 rotate-6 hover:z-10 duration-150 shadow-dark rounded-sm overflow-hidden grayscale-[75%] hover:grayscale-0 hover:scale-110"
+                                >
+                                    <img
+                                        src="https://bu.dusays.com/2024/03/13/65f192960ff2f.jpg"
+                                        alt="Blender的一次练习"
+                                        class="w-full h-full p-3"
+                                    />
+                                </div>
                             </div>
                             <div
-                                class="w-48 h-40 bg-[#EEEEEE] rotate-3 hover:rotate-0 hover:z-10 duration-150 shadow-dark -ml-36 md:ml-4 rounded-sm overflow-hidden"
+                                class="flex flex-col gap-8 -ml-44 md:-ml-4 items-center group"
                             >
-                                <img
-                                    src="https://bu.dusays.com/2024/03/13/65f191013a526.jpg"
-                                    alt=""
-                                    class="w-full h-full p-3"
-                                />
+                                <div
+                                    class="opacity-0 group-hover:opacity-100 group-hover:translate-y-1 duration-150"
+                                >
+                                    <div
+                                        class="flex flex-col items-center gap-2"
+                                    >
+                                        <p class="text-blue font-bold">
+                                            2022.9.25
+                                        </p>
+                                        <p class="text-gray font-bold">
+                                            出差平顶山的夕阳
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="w-48 h-40 bg-[#E6F0FF] hover:rotate-0 rotate-3 hover:z-10 duration-150 shadow-dark rounded-sm overflow-hidden grayscale-[75%] hover:grayscale-0 hover:scale-110"
+                                >
+                                    <img
+                                        src="https://bu.dusays.com/2024/03/13/65f191013a526.jpg"
+                                        alt="出差平顶山的夕阳"
+                                        class="w-full h-full p-3"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-3xl h-60">02</div>
-                    <div class="row-span-2 bg-white rounded-3xl">03</div>
+                    <div class="bg-white rounded-3xl h-80">01</div>
+                    <div class="row-span-2 bg-white rounded-3xl">02</div>
                     <div
                         class="bg-white rounded-3xl flex flex-col justify-center"
                     >
@@ -125,7 +195,7 @@ import { Icon } from "astro-icon";
                             <div
                                 class="font-bold text-blue text-4xl font-[SFMono-Regular]"
                             >
-                                04
+                                03
                             </div>
                             <div class="text-gray font-medium text-2xl">
                                 control
@@ -139,7 +209,7 @@ import { Icon } from "astro-icon";
                             <div
                                 class="font-bold text-blue text-4xl font-[SFMono-Regular]"
                             >
-                                05
+                                04
                             </div>
                             <div class="text-gray font-medium text-2xl">
                                 本站创作过程中使用的工具

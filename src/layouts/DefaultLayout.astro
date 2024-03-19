@@ -1,6 +1,7 @@
 ---
 import Header from "@components/header.astro";
 import Footer from "@components/footer.astro";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -15,8 +16,8 @@ import Footer from "@components/footer.astro";
             async
             src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         ></script>
-    </head>
-    <body class="bg-[#F9F9F9]">
+        <ViewTransitions />
+    </head><body class="bg-[#F9F9F9]">
         <Header />
         <slot />
         <Footer />

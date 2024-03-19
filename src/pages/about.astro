@@ -73,7 +73,9 @@ import { Icon } from "astro-icon";
                         >
                     </div>
                 </h1>
-                <div class="grid grid-cols-2 grid-rows-4 gap-4 my-10">
+                <div
+                    class="grid grid-cols-2 grid-rows-6 md:grid-rows-4 gap-4 my-10"
+                >
                     <div
                         class="col-span-2 bg-white rounded-3xl flex justify-center items-center"
                     >
@@ -85,11 +87,13 @@ import { Icon } from "astro-icon";
                                     <div
                                         class="flex flex-col items-center gap-2"
                                     >
-                                        <p class="text-blue font-bold">
-                                            2022.7.4
+                                        <p
+                                            class="text-blue font-bold font-[SFMono-Regular]"
+                                        >
+                                            2022年7月4日
                                         </p>
                                         <p class="text-gray font-bold">
-                                            映射在玻璃上的光影
+                                            映射在玻璃上斑驳的光影
                                         </p>
                                     </div>
                                 </div>
@@ -112,8 +116,10 @@ import { Icon } from "astro-icon";
                                     <div
                                         class="flex flex-col items-center gap-2"
                                     >
-                                        <p class="text-blue font-bold">
-                                            2022.7.21
+                                        <p
+                                            class="text-blue font-bold font-[SFMono-Regular]"
+                                        >
+                                            2022年7月21日
                                         </p>
                                         <p class="text-gray font-bold">
                                             在飞往哈尔滨的飞机上
@@ -139,8 +145,10 @@ import { Icon } from "astro-icon";
                                     <div
                                         class="flex flex-col items-center gap-2"
                                     >
-                                        <p class="text-blue font-bold">
-                                            2021.11.13
+                                        <p
+                                            class="text-blue font-bold font-[SFMono-Regular]"
+                                        >
+                                            2021年11月13日
                                         </p>
                                         <p class="text-gray font-bold">
                                             Blender的一次练习
@@ -166,8 +174,10 @@ import { Icon } from "astro-icon";
                                     <div
                                         class="flex flex-col items-center gap-2"
                                     >
-                                        <p class="text-blue font-bold">
-                                            2022.9.25
+                                        <p
+                                            class="text-blue font-bold font-[SFMono-Regular]"
+                                        >
+                                            2022年9月25日
                                         </p>
                                         <p class="text-gray font-bold">
                                             出差平顶山的夕阳
@@ -186,30 +196,138 @@ import { Icon } from "astro-icon";
                             </div>
                         </div>
                     </div>
-                    <div class="bg-white rounded-3xl h-80">01</div>
-                    <div class="row-span-2 bg-white rounded-3xl">02</div>
                     <div
-                        class="bg-white rounded-3xl flex flex-col justify-center"
+                        class="col-span-2 md:col-span-1 bg-white rounded-3xl h-80 flex flex-col justify-center"
                     >
-                        <div class="flex flex-col items-center">
-                            <div
-                                class="font-bold text-blue text-4xl font-[SFMono-Regular]"
-                            >
-                                03
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="font-semibold text-blue text-2xl font-[SFMono-Regular]"
+                                >
+                                    01.
+                                </div>
+                                <div class="text-gray font-medium text-2xl">
+                                    “花45s来向我们介绍你自己”
+                                </div>
                             </div>
-                            <div class="text-gray font-medium text-2xl">
-                                control
+                            <div class="text-xl font-extralight px-10">
+                                某不知名211农林类大学出身的视觉传达设计学生
+                                <i class="text-[#ccc]"> / </i>
+                                想通过一己之力实现自己设计的内容<i
+                                    class="text-[#ccc]"
+                                >
+                                    /
+                                </i>只懂一丢丢编程，最喜欢码Tailwindcss
+                                <i class="text-[#ccc]">
+                                    /
+                                </i>在KTV里面必点周杰伦和陈奕迅<i
+                                    class="text-[#ccc]"
+                                >
+                                    /
+                                </i>探索世界的动力是好奇心和胜负欲。
                             </div>
                         </div>
                     </div>
                     <div
-                        class="col-span-2 bg-white rounded-3xl flex flex-col justify-center md:justify-evenly py-10"
+                        class="col-span-2 row-span-2 md:col-span-1 bg-white rounded-3xl flex flex-col justify-center"
+                    >
+                        <div class="flex flex-col gap-4">
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="font-semibold text-blue text-2xl font-[SFMono-Regular]"
+                                >
+                                    02.
+                                </div>
+                                <div class="text-gray font-medium text-2xl">
+                                    我与博客
+                                </div>
+                            </div>
+                            <div class="text-xl font-extralight px-10">
+                                <p class="indent-10">
+                                    初心是第一份工作失利，离职在家赋闲，时觉焦虑与内耗缠身，索性借着对UI设计的热情，学习与之接壤的网页设计，至此开启了钻研前端的征程。
+                                </p><p class="indent-10">
+                                    从Hexo中众多的主题中瞥见了安知鱼，接着就是配置主题文件，自定义与魔改，与博客的羁绊就这样建立了起来。
+                                </p><p class="indent-10">
+                                    因为是低成本建站，没有购置云服务器，所以Hexo框架下的加载速度一直很严峻，过多的未被引用的CSS样式表和主题插件所带来的JS阻塞让首页访问速度一度跌到10秒开外，遂另寻出路。
+                                </p><p class="indent-10">
+                                    他山之石可以攻玉，在取经其他站长的过程中，Astro框架和Tailwindcss成为了建立本站的最重要工具。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-2 md:col-span-1 bg-white rounded-3xl flex flex-col justify-center"
+                    >
+                        <div class="flex flex-col items-center gap-8">
+                            <div class="flex flex-col items-center">
+                                <div
+                                    class="font-semibold text-blue text-2xl font-[SFMono-Regular]"
+                                >
+                                    03.
+                                </div>
+                                <div class="text-gray font-medium text-2xl">
+                                    截至目前，本站已有：
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap gap-6 justify-center">
+                                <div
+                                    class="flex flex-row gap-2 align-text-bottom"
+                                >
+                                    <div
+                                        class="text-gray font-[SFMono-Regular] text-4xl font-black"
+                                    >
+                                        4
+                                    </div><div class="text-xl font-extralight">
+                                        篇原创内容
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2">
+                                    <div
+                                        class="text-gray font-[SFMono-Regular] text-4xl font-black"
+                                    >
+                                        4
+                                    </div><div class="text-xl font-extralight">
+                                        个话题
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2">
+                                    <div
+                                        class="text-gray font-[SFMono-Regular] text-4xl font-black"
+                                    >
+                                        2
+                                    </div><div class="text-xl font-extralight">
+                                        位邻居
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2">
+                                    <div
+                                        class="text-gray font-[SFMono-Regular] text-4xl font-black"
+                                    >
+                                        19
+                                    </div><div class="text-xl font-extralight">
+                                        条参考链接
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2">
+                                    <div
+                                        class="text-gray font-[SFMono-Regular] text-4xl font-black"
+                                    >
+                                        2
+                                    </div><div class="text-xl font-extralight">
+                                        条评论
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-span-2 bg-white rounded-3xl flex flex-col justify-center gap-4"
                     >
                         <div class="flex flex-col items-center justify-center">
                             <div
-                                class="font-bold text-blue text-4xl font-[SFMono-Regular]"
+                                class="font-semibold text-blue text-2xl font-[SFMono-Regular]"
                             >
-                                04
+                                04.
                             </div>
                             <div class="text-gray font-medium text-2xl">
                                 本站创作过程中使用的工具

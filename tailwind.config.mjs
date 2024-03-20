@@ -105,8 +105,6 @@ export default {
 		},
 		fontFamily: {
 			sans: ['PingFang', ...defaultTheme.fontFamily.sans],
-			serif: ['PingFang', ...defaultTheme.fontFamily.serif],
-			mono: ['Consolas', ...defaultTheme.fontFamily.mono]
 		}
 	},
 	plugins: [

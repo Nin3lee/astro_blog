@@ -15,7 +15,6 @@ import { ViewTransitions } from "astro:transitions";
         />
         <title>Nin3的个人主页</title>
         <link rel="icon" href="/favicon.ico" type="image/svg+xml/ico" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script
             async
             src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
@@ -25,13 +24,6 @@ import { ViewTransitions } from "astro:transitions";
         <Header />
         <slot />
         <Footer />
-        <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script is:inline>
-            AOS.init({
-                once: true,
-                duration: 400,
-                easing: "ease-out-cubic",
-            });
-        </script>
+        <script src="@js/aos"></script>
     </body>
 </html>

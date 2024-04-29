@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
-
 import tailwind from "@astrojs/tailwind";
+
+import db from "@astrojs/db";
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,7 +9,7 @@ export default defineConfig({
     // 示例：允许来自单个域名的远程图像优化。
     domains: ['https://7bu.top/user/images']
   },
-  integrations: [tailwind()],
+  integrations: [tailwind(), db()],
   favicon: 'favicon.ico',
   markdown: {
     smartypants: false,
@@ -19,14 +20,14 @@ export default defineConfig({
       // https://shikiji.netlify.app/guide/dual-themes#light-dark-dual-themes
       experimentalThemes: {
         light: 'dark-plus',
-        dark: 'dark-plus',
+        dark: 'dark-plus'
       },
       // 添加自定义语言
       // 注意：Shiki 内置了无数语言，包括 .astro！
       // https://github.com/shikijs/shiki/blob/main/docs/languages.md
       langs: [],
       // 启用自动换行，以防止水平滚动
-      wrap: true,
-    },
-  },
+      wrap: true
+    }
+  }
 });

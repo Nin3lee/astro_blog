@@ -1,8 +1,9 @@
 ---
 import { Icon } from "astro-icon";
 import { getCollection } from "astro:content";
-import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
-import Comments from "../../components/Comments.astro";
+import MarkdownPostLayout from "@layouts/MarkdownPostLayout.astro";
+import Comments from "@components/Comments.astro";
+import ViewCounter from "@components/ViewCounter.astro";
 
 export async function getStaticPaths() {
     const allPosts = await getCollection("posts");
@@ -35,7 +36,9 @@ const { Content } = await entry.render();
             <p class="m-0 ml-3">·</p>
             <div class="ml-3">{entry.data.readingtime} min read</div>
             <p class="m-0 ml-3">·</p>
-            <div class="ml-3">{entry.data.views} Views</div>
+            <div class="ml-3">
+                <ViewCounter slug={slug} /> Views
+            </div>
         </div>
         <p
             class="text-5xl leading-tight my-4 bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-blue-500 font-extrabold"
